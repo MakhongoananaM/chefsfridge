@@ -25714,3 +25714,59 @@ page-login .myLogoImage {
   margin-right: auto;
   top: 15%;
 }
+
+page-signup .btn {
+  border-radius: 25px;
+  -webkit-box-shadow: 2px 15px 35px rgba(0, 0, 0, 0.35);
+  box-shadow: 2px 15px 35px rgba(0, 0, 0, 0.35);
+  font-size: 1.4em;
+  background-color: #a5c959;
+  color: white;
+  height: 2.5em;
+  width: 80%;
+  position: relative;
+  display: block;
+  margin: 5% auto;
+}
+
+page-signup .el1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  height: 30vh;
+}
+
+page-signup .list {
+  border-radius: 20px;
+  border: 1.8px solid gray;
+  position: relative;
+  display: block;
+  margin: 5% auto;
+}
+
+page-signup .privacy {
+  color: #a5c959;
+  position: relative;
+  display: block;
+  margin: 5% auto;
+}
+
+page-signup img {
+  position: relative;
+  display: block;
+  margin: 20% auto;
+}
+
+page-signup .forms {
+  margin-top: 0%;
+}
