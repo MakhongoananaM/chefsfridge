@@ -1,62 +1,76 @@
-page-signup {
-    .btn{
-        border-radius: 25px;
-        box-shadow: 2px 15px 35px rgba(0, 0, 0, 0.35);
-        font-size: 1.4em;
-        background-color:rgb(165, 201, 89);
-        color: white;
-        height: 2.5em;
-        width: 80%;
-        position: relative;
-        display: block;
-        margin: 5% auto;
-        
-        // margin-left: 9%;
-        // margin-top: 5%;
-        //  background: linear-gradient( to right, rgb(13, 104, 189)(24, 110, 156), #09A0EF(99, 153, 182));
+.myHeader{
+    border: dotted 0px black;
+    position: relative;
+    top: 0%;
+    height: 10%;
     
-    }
- 
-    //  .Su{
-    //      font-size: 2.5em;
-    //      color:rgb(192, 245, 157);
-    //      font-weight: bold;
-    //      margin:0 ;
-    //      padding: 0;
-    //      position: absolute;
-    //      top: 5%;
-    //     }
-     .el1{
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        height: 30vh;
-    }
-         .list{
-             border-radius: 20px;
-             border:  1.8px solid gray;
-             position: relative;
-             display: block;
-             margin: 5% auto;
-            //  margin-top: 7%;
-            //  text-align: center;
-         }
-     .privacy{
-        color: rgb(165, 201, 89);
-        position: relative;
-        display: block;
-        margin: 5% auto;
-         
-     }
-     img{
-        position: relative;
-        display: block;
-        margin: 20% auto;
-        //  text-align: center;
-        //  margin-top: -40%;
-     }
-     .forms{
-         margin-top: 0%;
-     }
 }
 
+
+
+.mySection1{
+    border: dotted 0px black;
+    position: absolute;
+    top: 12%;
+    
+}
+
+.myFooter{
+    border: dotted 0px black;
+    position: absolute;
+    top: 86%;
+    width: 100%;
+    color: cornflowerblue;
+    height: 0%;
+}
+
+.myLogo1{
+    width:20%;
+    position: absolute;
+    top: 0%;
+}
+
+.myHeaderImage{
+    width:45%;
+    margin-left: 28%;
+}
+
+.mySignInCard{
+    position: relative;
+    top: 15%;
+    width: 125%;
+}
+
+.mySignInBtn{
+    width: 60%;
+    height: 20px;
+    position: relative;
+    top: 0%;
+}
+
+.forgotPasswordText{
+    font-weight: bold;
+    color:navy;
+    position: relative;
+   
+}
+
+.belowImage1{
+    width:12%;
+    margin-left: 41%;
+    position: absolute;
+    margin-top: 7%;
+    
+}
+
+.mySignInButton{
+    background-color:#a1c45a;
+}
+
+.copyRightText{
+    margin-left: 32%;
+    font-weight:bold; 
+    color: rgb(236, 170, 38); 
+    position: relative;
+    top: 8%;
+}

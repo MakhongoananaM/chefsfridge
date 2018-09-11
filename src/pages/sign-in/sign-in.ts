@@ -1,5 +1,8 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import {SignupPage} from '../../pages/signup/signup';
+import { user } from '../../interfaces/user';
+import { ChefsFridgeProvider } from '../../providers/chefs-fridge/chefs-fridge';
 
 /**
  * Generated class for the SignInPage page.
@@ -15,11 +18,24 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class SignInPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  user = {} as user
+
+  constructor(public navCtrl: NavController, public navParams: NavParams, private chefsFridge: ChefsFridgeProvider) {
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad SignInPage');
   }
 
+  userCreateAccount(){
+    this.navCtrl.push(SignupPage);
+  }
+
+  userSignIn(user: user){
+    this.chefsFridge.signIn(user.email, user.password);
+  }
+
+  userResetPassword(){
+    this.chefsFridge.userResetPassword();
+  }
 }

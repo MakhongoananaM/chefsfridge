@@ -1,3 +1,85 @@
-page-sign-in {
-
+.myHeader{
+    border: dotted 0px black;
+    position: relative;
+    top: 1%;
+    height: 10%;
+    
 }
+
+.mylogoHolder{
+    border: dotted 0px black;
+    position: relative;
+    top: 7%;
+    height: 10%;  
+}
+
+.mySection{
+    border: dotted 0px black;
+    position: absolute;
+    top: 35%;
+    height: 40%;
+    
+}
+
+.myFooter{
+    border: dotted 1px black;
+    position: absolute;
+    top: 81%;
+    width: 110%;
+    color: cornflowerblue;
+    
+}
+
+.myLogo{
+    width:40%;
+    margin-left: 29%;
+    position: relative;
+    top: 0%;
+}
+
+.myHeaderImage{
+    width:45%;
+    margin-left: 28%;
+}
+
+.mySignInCard{
+    position: absolute;
+    width: 100%;
+    margin-left: -3%;
+}
+
+.mySignInBtn{
+    width: 60%;
+    height: 20px;
+    position: relative;
+    top: 0%;
+}
+
+.forgotPasswordText{
+    font-weight: bold;
+    color:navy;
+    position: relative;
+   
+}
+
+.belowImage{
+    width:12%;
+    margin-left: 38%;
+    position: absolute;
+    margin-top: 1%;
+}
+
+.mySignInButton{
+    background-color:#a1c45a;
+}
+/* @media screen and (max-width:959px){
+    .mySection{
+        width: 100%;
+    } 
+    .myHeader{
+        width: 70%;
+    }
+    .myFooter{
+        width: 30%;
+    }
+} */
