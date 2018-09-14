@@ -25978,3 +25978,68 @@ page-sign-in .belowImage {
   position: relative;
   top: 8%;
 }
+
+/* On screens that are 1360px wide or less, go from four columns to two columns */
+@media screen and (min-width: 767px) and (max-width: 1025px) {
+  .mySection {
+    border: dotted 0px black;
+    position: absolute;
+    top: 35%;
+    width: 95%;
+    height: 55%;
+    margin-top: 5%;
+    margin-left: 1%;
+  }
+  .mySignInCard {
+    top: 0%;
+    width: 105%;
+    position: relative;
+    margin-top: 10%;
+    width: 100%;
+  }
+}
+
+/* On screens that are 1360px wide or less, go from four columns to two columns */
+@media screen and (min-width: 374px) and (max-width: 376px) and (min-height: 811px) and (max-height: 813px) {
+  .mySignInCard {
+    width: 140%;
+  }
+}
+
+@media screen and (min-width: 413px) and (max-width: 415px) and (min-height: 735px) and (max-height: 737px) {
+  .mySignInCard {
+    width: 140%;
+  }
+}
+
+@media screen and (min-width: 374px) and (max-width: 376px) and (min-height: 666px) and (max-height: 668px) {
+  .mySignInCard {
+    width: 128%;
+    height: 110%;
+    top: 54%;
+  }
+}
+
+@media screen and (min-width: 319px) and (max-width: 321px) and (min-height: 567px) and (max-height: 569px) {
+  .mySignInCard {
+    width: 110%;
+  }
+}
+
+@media screen and (min-width: 410px) and (max-width: 412px) and (min-height: 822px) and (max-height: 824px) {
+  .mySignInCard {
+    width: 140%;
+  }
+}
+
+@media screen and (min-width: 410px) and (max-width: 412px) and (min-height: 730px) and (max-height: 732px) {
+  .mySignInCard {
+    width: 140%;
+  }
+}
+
+@media screen and (min-width: 359px) and (max-width: 361px) and (min-height: 639px) and (max-height: 641px) {
+  .mySignInCard {
+    width: 123%;
+  }
+}
