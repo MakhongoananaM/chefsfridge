@@ -6,28 +6,35 @@
     
 }
 
-
-
 .mySection1{
-    border: dotted 0px black;
-    position: absolute;
-    top: 12%;
-    
+    border: dotted 2px black;
+    position: relative;
+    margin: 0% -11% auto;
+    width: fit-content;
+    height: 70%;
 }
 
 .myFooter{
     border: dotted 0px black;
     position: absolute;
-    top: 86%;
+    top: 90%;
     width: 100%;
+    color: cornflowerblue; 
+}
+
+.myFooterSignUp{
+    border: dotted 1px black;
+    position: absolute;
+    margin-top: -14%;
+    width: 110%;
     color: cornflowerblue;
-    height: 0%;
 }
 
 .myLogo1{
-    width:20%;
+    width:40%;
     position: absolute;
     top: 0%;
+    left:30%;
 }
 
 .myHeaderImage{
@@ -37,8 +44,18 @@
 
 .mySignInCard{
     position: relative;
-    top: 15%;
-    width: 125%;
+    top: 7%;
+
+        
+    
+}
+
+
+.mySignupCard{
+    position: relative;
+    top: 10%;
+    width: 100%;
+    margin-left: -5%;
 }
 
 .mySignInBtn{
@@ -56,11 +73,17 @@
 }
 
 .belowImage1{
+    display: block;
+    margin: 20% 20% auto;
+    position: relative;
+    margin-top: 5%;
+}
+
+.belowImageSignUp{
     width:12%;
-    margin-left: 41%;
-    position: absolute;
-    margin-top: 7%;
-    
+    position: relative;
+    margin-top: 1%;
+    left: 45%;  
 }
 
 .mySignInButton{

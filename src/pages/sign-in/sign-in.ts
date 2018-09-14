@@ -3,6 +3,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import {SignupPage} from '../../pages/signup/signup';
 import { user } from '../../interfaces/user';
 import { ChefsFridgeProvider } from '../../providers/chefs-fridge/chefs-fridge';
+import { Home2Page } from '../home2/home2';
 
 /**
  * Generated class for the SignInPage page.
@@ -33,9 +34,11 @@ export class SignInPage {
 
   userSignIn(user: user){
     this.chefsFridge.signIn(user.email, user.password);
+    this.navCtrl.setRoot(Home2Page);
   }
 
   userResetPassword(){
     this.chefsFridge.userResetPassword();
+    
   }
 }

@@ -10,6 +10,7 @@ import { ChefsFridgeProvider } from '../providers/chefs-fridge/chefs-fridge';
 import { HttpClientModule } from '@angular/common/http';
 import { SignInPage } from '../pages/sign-in/sign-in';
 import { AdminPage } from '../pages/admin/admin';
+import { Home2Page } from '../pages/home2/home2';
 
 
 
@@ -19,7 +20,8 @@ import { AdminPage } from '../pages/admin/admin';
     HomePage,
     SignupPage,
     SignInPage,
-    AdminPage
+    AdminPage,
+    Home2Page
   ],
   imports: [
     BrowserModule,HttpClientModule ,
@@ -31,7 +33,8 @@ import { AdminPage } from '../pages/admin/admin';
     HomePage,
     SignupPage,
     SignInPage,
-    AdminPage
+    AdminPage,
+    Home2Page
   ],
   providers: [
     StatusBar,

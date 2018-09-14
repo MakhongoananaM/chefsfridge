@@ -2,8 +2,10 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { user } from '../../interfaces/user';
 import {HomePage} from '../../pages/home/home';
-import { ToastController, LoadingController, NavController } from 'ionic-angular';
+import {SignInPage} from '../../pages/sign-in/sign-in'
+import { ToastController, LoadingController} from 'ionic-angular';
 import { AlertController } from 'ionic-angular';
+import { Home2Page } from '../../pages/home2/home2'
 declare var firebase;
 var auth = firebase.auth();
 /*
@@ -14,17 +16,17 @@ var auth = firebase.auth();
 */
 @Injectable()
 export class ChefsFridgeProvider {
-
   user = {} as user ;
   url;
-  constructor(public http: HttpClient,public loadingCtrl: LoadingController, public toastCtrl: ToastController,public alertCtrl: AlertController) {
+  constructor(public http: HttpClient,
+              public loadingCtrl: LoadingController, 
+              public toastCtrl: ToastController,
+              public alertCtrl: AlertController) {
     console.log('Hello ChefsFridgeProvider Provider');
   }
   signIn(email,password){
     firebase.auth().signInWithEmailAndPassword(email, password).then(()=>{
-      var email= firebase.auth().currentUser.email;
-      var password= firebase.auth().currentUser.password;
-      //this.navCtrl.push(HomePage);
+     
       const loader = this.loadingCtrl.create({
       content:"please wait",
       duration:3000
@@ -36,6 +38,7 @@ export class ChefsFridgeProvider {
     }, 5000);
     })
    }
+
   SignUp(email ,password ,name ,surname){
     return new Promise((reject, resolve) => {
       //Create a user account with the email and password
@@ -100,10 +103,18 @@ export class ChefsFridgeProvider {
 
   resetPassword(email : any){
     auth.sendPasswordResetEmail(email).then(function() {
-     
     }).catch(function(error) {
       // An error happened.
     });
   } 
+
+  userLogOut(){
+    firebase.auth().signOut().then(function(){
+      //signout success
+      // this.navCtrl.setRoot(SignInPage);
+    }).catch(function(error){
+      // error occured
+    })
+  }
 
 }
