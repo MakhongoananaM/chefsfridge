@@ -1,0 +1,86 @@
+page-edit-profile {
+    .myImg{
+        border: dotted 0px black;
+        position: relative;
+        top: 0%;
+        height: 20%;
+ 
+    }
+ 
+ 
+ 
+    .myprofile{
+        border: dotted 0px black;
+        position: absolute;
+        top:0%;
+        width: 75%;
+        height: 87%;
+    }
+ 
+    .myFooter{
+        border: dotted 0px black;
+        position: absolute;
+        top: 86%;
+        width: 100%;
+        color: cornflowerblue;
+        height: 20px;
+    }
+ 
+    .myLogo1{
+        width:20%;
+        position: absolute;
+        top: 0%;
+    }
+ 
+    .myHeaderImage{
+        width:45%;
+        margin-left: 28%;
+    }
+ 
+    .mySignInCard{
+        position: relative;
+        top: 10%;
+        width: 125%;
+        height: 100%;
+    }
+ 
+    .mySignInBtn{
+        width: 60%;
+        height: 20px;
+        position: relative;
+        top: 0%;
+    }
+ 
+    .forgotPasswordText{
+        font-weight: bold;
+        color:navy;
+        position: relative;
+ 
+    }
+ 
+    .belowImage1{
+        width:12%;
+        margin-left: 41%;
+        position: absolute;
+        margin-top: 7%;
+ 
+    }
+ 
+    .mySave{
+        background-color:#a1c45a ;
+    }
+ 
+    .copyRightText{
+        margin-left: 32%;
+        font-weight:bold;
+        color: rgb(236, 170, 38);
+        position: relative;
+        top: 8%;
+    }
+    .imgg{
+        width: 10px;
+        height: 10%;
+    }.imgthmb{
+        height: 140px;
+    }
+}

@@ -1,12 +1,55 @@
 <ion-header>
-  <ion-navbar>
-    <ion-title>
-      Ionic Blank
-    </ion-title>
-  </ion-navbar>
+  <div class="iconHolder">
+    <img src="../../assets/imgs/signUplogo.PNG" class="iconHomePage">
+
+    <ion-searchbar (ionInput)="getItems($event)" class="mySearchBar"></ion-searchbar>
+    
+    </div>
+
+      <div class="navigationHolder">
+          <ion-icon ios="ios-refresh" md="md-refresh" class="myNavicon"></ion-icon>
+          <ion-icon ios="ios-basket" md="md-basket" class="myNavicon"></ion-icon>
+          <ion-icon ios="ios-contact" md="md-contact" class="myNavicon" (click)="profile()"></ion-icon>
+          <ion-icon ios="ios-power" md="md-power" class="myNavicon" (click)="userLogOut()"></ion-icon>
+        </div>
+  
 </ion-header>
 
 <ion-content padding>
- 
-  
+    <ion-card *ngFor="let a of recipe" >
+        <ion-item>
+          <ion-avatar item-start>
+            <img src="../../assets/imgs/signUplogo.PNG">
+          </ion-avatar>
+          <h2>Chefs Fridge</h2>
+          <p>{{a.name}}</p>
+        </ion-item>
+        <img src={{a.image}}>
+        <ion-card-content>
+          <p>{{a.description}}</p>
+        </ion-card-content>
+        <ion-row>
+          <ion-col>
+            <button ion-button icon-start clear small (click)="likes(a.key)">
+              <ion-icon name="thumbs-up" ></ion-icon>
+              <div>{{a.likes}} Likes</div>
+            </button>
+          </ion-col>
+          <ion-col>
+            <button ion-button icon-start clear small>
+              <ion-icon name="text"></ion-icon>
+              <div>4 Comments</div>
+            </button>
+          </ion-col>
+          <ion-col center text-center>
+            <ion-note>
+              11h ago
+            </ion-note>
+          </ion-col>
+        </ion-row>
+      
+      </ion-card>
+
+     
 </ion-content>
+

@@ -10,7 +10,9 @@ import { ChefsFridgeProvider } from '../providers/chefs-fridge/chefs-fridge';
 import { HttpClientModule } from '@angular/common/http';
 import { SignInPage } from '../pages/sign-in/sign-in';
 import { AdminPage } from '../pages/admin/admin';
-
+import {ProfilePage} from '../pages/profile/profile';
+import { EditProfilePage } from '../pages/edit-profile/edit-profile';
+import { SearchPage } from '../pages/search/search';
 
 
 @NgModule({
@@ -19,7 +21,10 @@ import { AdminPage } from '../pages/admin/admin';
     HomePage,
     SignupPage,
     SignInPage,
-    AdminPage
+    AdminPage,
+    ProfilePage,
+    EditProfilePage,
+    SearchPage
   ],
   imports: [
     BrowserModule,HttpClientModule ,
@@ -31,7 +36,10 @@ import { AdminPage } from '../pages/admin/admin';
     HomePage,
     SignupPage,
     SignInPage,
-    AdminPage
+    AdminPage,
+    ProfilePage,
+    EditProfilePage,
+    SearchPage
   ],
   providers: [
     StatusBar,

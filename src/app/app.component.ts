@@ -7,11 +7,14 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { HomePage } from '../pages/home/home';
 import { SignInPage } from '../pages/sign-in/sign-in';
 import { SignupPage } from '../pages/signup/signup';
+import { AdminPage } from '../pages/admin/admin';
+import {ProfilePage} from '../pages/profile/profile';
+import { SearchPage } from '../pages/search/search';
 @Component({
   templateUrl: 'app.html'
 })
 export class MyApp {
-  rootPage:any = SignInPage;
+  rootPage:any = SearchPage;
 
   constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen) {
     platform.ready().then(() => {

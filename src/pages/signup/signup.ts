@@ -19,6 +19,10 @@ export class SignupPage {
   
   signUp(user :user){
     this.chefsFridge.SignUp(user.email ,user.password ,user.name, user.surname);
+    user.email = "";
+    user.name = "";
+    user.surname = "";
+    user.password = "";
   }
 
   backToSignInPage(){

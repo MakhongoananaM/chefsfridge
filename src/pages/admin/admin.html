@@ -15,9 +15,44 @@
 
 <ion-content padding>
     <ion-item>
-        <ion-input type="file" [(ngModel)]="image"></ion-input>
+        <ion-input type="file" accept="image/png, image/jpeg" (change)="insertImage($event)"></ion-input>
+    </ion-item>
+      <ion-label>Category</ion-label>
+      <ion-item>
+        <ion-select [(ngModel)]="recipe.category">
+          <ion-option value="Vegan">Vegan</ion-option>
+          <ion-option value="Vegeterian">Vegeterian</ion-option>
+          <ion-option value="Meat Lover">Meat Lover</ion-option>
+        </ion-select>
       </ion-item>
+      <ion-label>Sub-Category</ion-label>
+      <ion-item>
+        <ion-select [(ngModel)]="recipe.sub_category">
+          <ion-option value="Breakfast">Breakfast</ion-option>
+          <ion-option value="Lunch">Lunch</ion-option>
+          <ion-option value="Dinner">Dinner</ion-option>
+          <ion-option value="Dessert">Dessert</ion-option>
+        </ion-select>
+      </ion-item>
+    <ion-item>
+      <ion-label>Name</ion-label>
+      <ion-input [(ngModel)]="recipe.name"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Description</ion-label>
+      <ion-input [(ngModel)]="recipe.description"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Ingredients</ion-label>
+      <ion-input placeholder="Enter an ingredient" [(ngModel)]="item"></ion-input>
+    </ion-item>
+    <button ion-button (click)="addIngredients()">Add ingredient</button>
+    <ion-item>
+      <ion-label>Direction</ion-label>
+      <ion-input placeholder="Enter a method" [(ngModel)]="method"></ion-input>
+    </ion-item>
+    <button ion-button (click)="addMethod()">Add Method</button>
   <div>
-      <button ion-button (click)="addRecipe()">ADD Recipe</button>
+      <button ion-button (click)="addRecipe(recipe)">ADD Recipe</button>
   </div>
 </ion-content>

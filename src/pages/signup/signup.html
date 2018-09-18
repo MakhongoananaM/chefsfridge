@@ -1,34 +1,10 @@
 <ion-content padding >
- <!--  <div class="forms">
-  <img src="../../assets/imgs/logo1.png" alt="blank">
-  <ion-item class="list">
-    <ion-input type="text" placeholder="Name" [(ngModel)]="user.name"></ion-input>
-  </ion-item>
-
-  <ion-item class="list">
-    <ion-input type="text" placeholder="Surname" [(ngModel)]="user.surname"></ion-input>
-  </ion-item>
-
-  <ion-item class="list">
-      <ion-input type="text" placeholder="Email" [(ngModel)]="user.email"></ion-input>
-  </ion-item>
-
-  <ion-item class="list">
-      <ion-input type="password" placeholder="Password" [(ngModel)]="user.password"></ion-input>
-  </ion-item>
-
-  <button ion-button block class="btn" (click)="signUp(user)">Sign Up</button>
-
-
-  <div>
-      <button class="privacy" ion-button clear>Privacy Policy</button>
-  </div>
-</div> -->
-
+ 
 <ion-content>
   <div class="myHeader">
-      <img src="../../assets/imgs/signUplogo.PNG" class="myLogo1" (click)="backToSignInPage()">
-    </div>
+    <img src="../../assets/imgs/header.jpg" class="myHeaderImage">
+    <img src="../../assets/imgs/logo2.png" class="myLogo">
+  </div>
     
     <div class="mySection1">
         <ion-card class="mySignInCard">
@@ -46,42 +22,12 @@
                         </ion-item>
 
                         <ion-item>
-                              <ion-input type="text" placeholder="Username"></ion-input>
-                            </ion-item>
-
-                        <ion-item>
                               <ion-input type="text" placeholder="Email address"  [(ngModel)]="user.email"></ion-input>
                             </ion-item>
-
-                            <ion-list>
-                                  <ion-item>
-                                    <ion-label>Gender</ion-label>
-                                    <ion-select [(ngModel)]="category">
-                                      <ion-option value="nes">Female</ion-option>
-                                      <ion-option value="n64">Male</ion-option>
-                                    </ion-select>
-                                  </ion-item>
-                                </ion-list>
-                                  <ion-list>
-                                          <ion-item>
-                                            <ion-label>Category</ion-label>
-                                            <ion-select [(ngModel)]="category">
-                                              <ion-option value="nes">Vegan</ion-option>
-                                              <ion-option value="n64">Vegetarien</ion-option>
-                                              <ion-option value="ps">Meat Lovers</ion-option>
-                                              
-                                            </ion-select>
-                                          </ion-item>
-                                        </ion-list>
-                               
-
                     <ion-item>
                       <ion-input type="password" placeholder="Password"  [(ngModel)]="user.password"></ion-input>
                     </ion-item>
 
-                    <ion-item>
-                          <ion-input type="password" placeholder="Confirm password"></ion-input>
-                        </ion-item>
                     <ion-item>
                         <button ion-button block class="mySignInButton" (click)="signUp(user)">Sign up</button>                        
                       </ion-item> 
@@ -91,9 +37,9 @@
           </ion-card>
       </div>
       <div class="myFooter">
-         
-          <img src="../../assets/imgs/below.jpg" class="belowImage">
-        </div>
+        <p style="margin-left: 30%; font-weight:bold; color: rgb(236, 170, 38);" (click)="backToSignInPage()">Go Back To Sign In</p>
+        <img src="../../assets/imgs/below.jpg" class="belowImage">
+      </div>
        
      
 </ion-content>

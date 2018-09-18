@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { recipe } from '../../interfaces/recipe';
 declare var firebase;
 /**
  * Generated class for the AdminPage page.
@@ -14,28 +15,61 @@ declare var firebase;
   templateUrl: 'admin.html',
 })
 export class AdminPage {
-  image
-
+  // image:any;
+  // imageURL: any;
+  selectedImage: any;
+  recipe = {} as recipe
+  ingredients = [];
+  item: string;
+  methods = [];
+  method: string;
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
-
   ionViewDidLoad() {
     console.log('ionViewDidLoad AdminPage');
   }
-
-  uploadImg(){
-    
+  insertImage(event: any){
+    this.selectedImage = event.target.files[0];
   }
+  uploadImage(){
+    var filename = this.selectedImage.name;
+    firebase.storage().ref()
+  }
+  addIngredients(){
+    this.ingredients.push(this.item);
+    console.log(this.ingredients); 
+  }
+  addMethod(){
+    this.methods.push(this.method);
+    console.log(this.methods);
+  }
+  addRecipe(recipe:recipe){
+    var downloadURL: any;
+    var filename = this.selectedImage.name;
+    // 
+    const metaData = {'contentType': this.selectedImage.type};
+    //create reference
+    var storageRef = firebase.storage().ref(recipe.category+'/'+recipe.sub_category+'/'+filename)
+    //upload the selected image to the storage
+    var uploadTask = storageRef.put(this.selectedImage, metaData)
+    // Get the download URL
+    storageRef.getDownloadURL().then((url) => {
+      downloadURL = url;
+      console.log(downloadURL);
+    }).catch((error) => { 
+    });
 
-  addRecipe(){
-    firebase.database().ref('recipes/').push({
-      category: "Meat Lover",
-      sub_category: "Dinner",
-      name: "Pan lasagne",
-      image: this.image,
-      ingredients: ['1 tbsp olive oil', '1 onion, finely sliced', '500g lean beef mince', '500g tomato and basil pasta sauce', 'large bunch basil, roughly chopped', '500g ricotta', '50g Parmesan, grated', '1 medium egg, beaten', '5 to 6 large lasagne sheets', '75g grated mozzarella'],
-      directions: ['In a deep, ovenproof frying pan (about 23cm across the base), heat oil and fry onion and mince for 5 minutes until mince is brown and onion is soft. Stir in pasta sauce and half the fresh basil; simmer for 1 minute. Meanwhile, in a medium bowl, mix ricotta, Parmesan and egg, and some seasoning.', 'Scoop two-thirds of the mince mixture out of the pan into a bowl. Lay a single layer of lasagne sheets over the mince mixture in the pan (break sheets if needed). Spoon over one-third of ricotta mixture and a sprinkling of mozzarella. Repeat the layering twice more (using mince from bowl), finishing with ricotta on top and a sprinkling of grated mozzarella. Cover pan with a lid or baking tray, and simmer for 10 to 12 minutes. Preheat grill to high.', 'Once pasta is tender, put pan under grill for 3 to 5 minutes until golden. Sprinkle over remaining basil and some freshly ground pepper; serve.']
-    })
+    setTimeout(() => {
+      firebase.database().ref('recipes/').push({
+        category: recipe.category,
+        sub_category: recipe.sub_category,
+        name: recipe.name,
+        image: downloadURL,
+        ingredients: this.ingredients,
+        directions: this.methods,
+        description: recipe.description
+      })
+    }, 5000);
   }
 
 }
