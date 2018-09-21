@@ -14,7 +14,7 @@ import { SearchPage } from '../pages/search/search';
   templateUrl: 'app.html'
 })
 export class MyApp {
-  rootPage:any = SearchPage;
+  rootPage:any = SignInPage;
 
   constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen) {
     platform.ready().then(() => {
