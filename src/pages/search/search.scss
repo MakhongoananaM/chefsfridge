@@ -1,3 +1,88 @@
 page-search {
+    .btn{
+        display: block;
+        position: relative;
+        margin: 20% 40% auto;
+        background-color: limegreen; 
+    }
+    .mySearchBar{
+        display: block;
+        position: relative;
+        margin: 8% 0% auto; 
+        border-color: rgb(0, 225, 255);
+        border-style: solid;
+        font-size: 2em;
+    
+    }
+          .iconHolder{
+            border: dotted 0px black;
+            position: relative;
+            top:1%;
+        }
+     
+        .navigationHolder{
+            border: solid 2px rgb(236, 170, 38);
+            position: relative;
+            background-color:white;
+            width: 100%;
+        }
+     
+        .iconHomePage{
+            width: 15%;
+        }
+     
+        .myNavicon{
+           font-size: 2em;
+           padding: 2%;
+           margin-left: 11%;
+           color: cadetblue;
+           opacity: 0.8;
+           font-weight: bolder;
+        }
+     
+        .myNavicon:hover{
+            color : rgb(236, 170, 38);
+        }
 
+        
+     
+        .mys{
+            
+            float: right;
+            right: 20%;
+            background-color: white;
+            position: relative;
+            top:1%;
+            color: limegreen;
+            font-size: 1.5em;
+        }
+
+        
+
+        .scrollbar{
+            
+            display: flex;
+            flex-flow: row nowrap;
+            height: 12vh;
+            overflow-x: scroll;
+            image:last-child{
+            margin-right: 10px;
+            position: relative;
+            margin: 0% 0% auto;        
+            }
+            .image{
+                flex: 0 0 auto;
+                margin-left: 10px;
+                border: solid 2px skyblue;
+                border-radius: 10%;
+
+                img{
+                    width: 80px;
+                    height: 100%;
+                    border-radius: 10%;
+                    border-color: limegreen;
+                }
+            }
+        }
+    
 }

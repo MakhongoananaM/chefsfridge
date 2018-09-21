@@ -1,0 +1,37 @@
+<ion-header>
+  <div class="iconHolder">
+    <img src="../../assets/imgs/signUplogo.PNG" class="iconHomePage">
+ 
+    <!-- <ion-searchbar (ionInput)="getItems($event)" class="mySearchBar"></ion-searchbar>
+  --><ion-label class="mys">CATEGORY</ion-label>
+    </div>
+ 
+      <div class="navigationHolder">
+          <ion-icon ios="ios-refresh" md="md-refresh" class="myNavicon"></ion-icon>
+          <ion-icon ios="ios-basket" md="md-basket" class="myNavicon"></ion-icon>
+          <ion-icon ios="ios-contact" md="md-contact" class="myNavicon" (click)="profile()"></ion-icon>
+          <ion-icon ios="ios-power" md="md-power" class="myNavicon" (click)="userLogOut()"></ion-icon>
+        </div>
+ 
+ </ion-header>
+
+<ion-content class="card-background-page">
+
+  <ion-card (click)="Vega()" >
+    <img src="../../assets/imgs/vegi.jpg" alt="" class="imgs">
+    <div class="card-title">Vegan</div>
+    <!-- <div class="card-subtitle">41 Listings</div> -->
+  </ion-card>
+
+  <ion-card (click)="Vegi()">
+    <img src="../../assets/imgs/landscape-1470239458-vegeterian-dinners.jpg" alt=""class="imgs" >
+    <div class="card-title">Vegitarian</div>
+    <!-- <div class="card-subtitle">64 Listings</div> -->
+  </ion-card>
+
+  <ion-card (click)="MeatL()">
+    <img src="../../assets/imgs/Tasty-meat.jpg" alt="" class="imgs">
+    <div class="card-title">Meat Lover</div>
+    <!-- <div class="card-subtitle">72 Listings</div> -->
+  </ion-card>
+</ion-content>

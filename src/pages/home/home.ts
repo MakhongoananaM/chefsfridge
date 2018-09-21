@@ -4,6 +4,7 @@ import { user } from '../../interfaces/user';
 import { ChefsFridgeProvider } from '../../providers/chefs-fridge/chefs-fridge';
 import {SignInPage} from '../../pages/sign-in/sign-in'; 
 import { ProfilePage } from '../profile/profile';
+import { CategoryPage } from '../category/category';
 
 @Component({
   selector: 'page-home',
@@ -74,6 +75,9 @@ export class HomePage {
 
   profile(){
     this.navCtrl.push(ProfilePage);
+  }
+  Category(){
+    this.navCtrl.push(CategoryPage);
   }
 
   search(){

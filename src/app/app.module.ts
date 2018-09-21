@@ -13,6 +13,10 @@ import { AdminPage } from '../pages/admin/admin';
 import {ProfilePage} from '../pages/profile/profile';
 import { EditProfilePage } from '../pages/edit-profile/edit-profile';
 import { SearchPage } from '../pages/search/search';
+import { CategoryPage } from '../pages/category/category';
+import { VegetarianPage } from '../pages/vegetarian/vegetarian';
+import { VeganPage } from '../pages/vegan/vegan';
+import { MeatloverPage } from '../pages/meatlover/meatlover';
 
 
 @NgModule({
@@ -24,7 +28,11 @@ import { SearchPage } from '../pages/search/search';
     AdminPage,
     ProfilePage,
     EditProfilePage,
-    SearchPage
+    SearchPage,
+    CategoryPage,
+    VegetarianPage,
+    VeganPage,
+    MeatloverPage
   ],
   imports: [
     BrowserModule,HttpClientModule ,
@@ -39,7 +47,11 @@ import { SearchPage } from '../pages/search/search';
     AdminPage,
     ProfilePage,
     EditProfilePage,
-    SearchPage
+    SearchPage,
+    CategoryPage,
+    VegetarianPage,
+    VeganPage,
+    MeatloverPage
   ],
   providers: [
     StatusBar,
