@@ -48,4 +48,34 @@
   </div>
 
 <button ion-button class="btn">Submit</button>
+<ion-content padding>
+  
+  <ion-label>Category</ion-label>
+  <ion-item>
+    <ion-select [(ngModel)]="category">
+      <ion-option value="Vegan">Vegan</ion-option>
+      <ion-option value="Vegeterian">Vegeterian</ion-option>
+      <ion-option value="Meat Lover">Meat Lover</ion-option>
+    </ion-select>
+  </ion-item>
+
+  <ion-label>Sub-Category</ion-label>
+  <ion-item>
+    <ion-select [(ngModel)]="sub_category">
+      <ion-option value="Breakfast">Breakfast</ion-option>
+      <ion-option value="Lunch">Lunch</ion-option>
+      <ion-option value="Dinner">Dinner</ion-option>
+      <ion-option value="Dessert">Dessert</ion-option>
+    </ion-select>
+  </ion-item>
+
+<ion-input type="text" [(ngModel)]="item"></ion-input>
+<button ion-button (click)="addItem()">Add Item</button>
+<button ion-button (click)="search()">Search</button>
+
+<ion-list *ngFor="let a of finalRecipe">
+    {{a.name}}<br>
+    {{a.description}}<br>
+    <img src="{{a.image}}" alt="">
+</ion-list>
 </ion-content>
