@@ -1,0 +1,76 @@
+page-meatlover {
+    .card-background-page {
+    
+        ion-card {
+          position: relative;
+          text-align: center;
+          width:auto;
+          height: 22%;
+       }
+      
+        .card-title {
+          position: absolute;
+          top: 36%;
+          font-size: 2.0em;
+          width: 100%;
+          font-weight: bold;
+          color: #fff;
+        }
+      
+        .card-subtitle {
+          font-size: 1.0em;
+          position: absolute;
+          top: 52%;
+          width: 100%;
+          color: #fff;
+        }
+      
+      }
+      .iconHolder{
+        border: dotted 0px black;
+        position: relative;
+        top:1%;
+    }
+ 
+    .navigationHolder{
+        border: solid 2px rgb(236, 170, 38);
+        position: relative;
+        background-color:white;
+        width: 100%;
+    }
+ 
+    .iconHomePage{
+        width: 15%;
+    }
+ 
+    .myNavicon{
+       font-size: 2em;
+       padding: 2%;
+       margin-left: 11%;
+       color: cadetblue;
+       opacity: 0.8;
+       font-weight: bolder;
+    }
+ 
+    .myNavicon:hover{
+        color : rgb(236, 170, 38);
+    }
+ 
+    .mys{
+        width: 80%;
+        float: right;
+        background-color: white;
+        position: relative;
+        top:1%;
+        color: limegreen;
+        font-size: 1.5em;
+    }
+    .imgs{
+        width: 100%;
+        height: 100%;
+        display: block;
+        position: relative;
+        // margin: 0% 25% auto;
+        filter: brightness(80%);
+}
+}
