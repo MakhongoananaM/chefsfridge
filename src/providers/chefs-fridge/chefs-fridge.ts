@@ -5,6 +5,7 @@ import {HomePage} from '../../pages/home/home';
 import{objupdate}from '../../pages/profileupdate';
 import { ToastController, LoadingController, NavController } from 'ionic-angular';
 import { AlertController} from 'ionic-angular';
+import { getNonHydratedSegmentIfLinkAndUrlMatch } from 'ionic-angular/navigation/url-serializer';
 
 declare var firebase;
 var auth = firebase.auth();
@@ -25,6 +26,9 @@ export class ChefsFridgeProvider {
  surname: string;
  Bio: string;
  arrupdate=[];
+
+ //derik array
+ food =  new Array();
   constructor(public http: HttpClient,public loadingCtrl: LoadingController, public toastCtrl: ToastController,public alertCtrl: AlertController) {
     console.log('Hello ChefsFridgeProvider Provider');
   }
@@ -267,6 +271,7 @@ export class ChefsFridgeProvider {
 
 
 
+
  
    }
 
@@ -329,4 +334,72 @@ export class ChefsFridgeProvider {
   //   }
   // }
 
+  
+
+
+  getSearch(text){
+    var arr = [];
+   
+  return new Promise ((pass,fail) =>{
+    firebase.database().ref('recipes/').on('value',(data)=>{
+      var recep =  data.val();
+      var keys =  Object.keys(recep);
+      for (var x = 0; x < keys.length; x++){
+        var key = keys[x];
+        var  str1 = recep[key].name.substr(0,text.length);
+        if (str1 == text){
+          console.log(recep[key].name);
+          arr.push(recep[key])
+          pass(arr)
+        }
+        
+      } 
+    
+   
+    })
+  })
+  }
+
+
+  
+  getSearch2(){
+    var arr = [];
+   
+  return new Promise ((pass,fail) =>{
+    firebase.database().ref('recipes/').on('value',(data)=>{
+      var recep =  data.val();
+      var keys =  Object.keys(recep);
+      for (var x = 0; x < keys.length; x++){
+        var key = keys[x];
+          arr.push(recep[key])
+          pass(arr)
+        
+        
+      } 
+    
+   
+    })
+  })
+  }
+
+//cheating the code to display as default
+  getSearch3(){
+    var arr = [];
+   
+  return new Promise ((pass,fail) =>{
+    firebase.database().ref('recipes/').on('value',(data)=>{
+      var recep =  data.val();
+      var keys =  Object.keys(recep);
+      for (var x = 0; x < keys.length; x++){
+        var key = keys[x];
+          arr.push(recep[key])
+          pass(arr)
+        
+        
+      } 
+    
+   
+    })
+  })
+  }
   }

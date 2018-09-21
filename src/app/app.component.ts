@@ -10,11 +10,12 @@ import { SignupPage } from '../pages/signup/signup';
 import { AdminPage } from '../pages/admin/admin';
 import {ProfilePage} from '../pages/profile/profile';
 import { SearchPage } from '../pages/search/search';
+
 @Component({
   templateUrl: 'app.html'
 })
 export class MyApp {
-  rootPage:any = SearchPage;
+  rootPage:any = HomePage   ;
 
   constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen) {
     platform.ready().then(() => {
