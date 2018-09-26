@@ -1,0 +1,41 @@
+
+    .IconHolder{
+        border: dotted 0px black;
+        position: relative;
+        top:1%;
+    }
+    
+    .navigationHolder{
+        border: solid 2px rgb(236, 170, 38);
+        position: relative;
+        background-color:white;
+        width: 100%;
+    }
+    
+    .iconHomePage{
+        width: 15%;
+    }
+    
+    .myNavicon{
+       font-size: 2em;
+       padding: 2%;
+       margin-left: 11%;
+       color: cadetblue;
+       opacity: 0.8;
+       font-weight: bolder;
+    }
+    
+    .myNavicon:hover{
+        color : rgb(236, 170, 38);
+    }
+    
+    .mySearchBar{
+        width: 85%; 
+        float: right; 
+        background-color: white;
+        position: relative;
+        top:1%;
+    }
+//     .image{
+// height: 56%;
+// }

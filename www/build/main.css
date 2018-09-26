@@ -26002,7 +26002,7 @@ page-sign-in .belowImage {
 /* On screens that are 1360px wide or less, go from four columns to two columns */
 @media screen and (min-width: 374px) and (max-width: 376px) and (min-height: 811px) and (max-height: 813px) {
   .mySignInCard {
-    width: 140%;
+    width: 128%;
   }
 }
 
@@ -26042,4 +26042,46 @@ page-sign-in .belowImage {
   .mySignInCard {
     width: 123%;
   }
+}
+
+.IconHolder {
+  border: dotted 0px black;
+  position: relative;
+  top: 1%;
+}
+
+.navigationHolder {
+  border: solid 2px #ecaa26;
+  position: relative;
+  background-color: white;
+  width: 100%;
+}
+
+.iconHomePage {
+  width: 15%;
+}
+
+.myNavicon {
+  font-size: 2em;
+  padding: 2%;
+  margin-left: 11%;
+  color: cadetblue;
+  opacity: 0.8;
+  font-weight: bolder;
+}
+
+.myNavicon:hover {
+  color: #ecaa26;
+}
+
+.mySearchBar {
+  width: 85%;
+  float: right;
+  background-color: white;
+  position: relative;
+  top: 1%;
+}
+
+.image {
+  height: 56%;
 }

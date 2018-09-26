@@ -8,11 +8,12 @@ import { HomePage } from '../pages/home/home';
 import { SignInPage } from '../pages/sign-in/sign-in';
 import { SignupPage } from '../pages/signup/signup';
 import { Home2Page } from '../pages/home2/home2';
+import { ViewPage } from '../pages/view/view';
 @Component({
   templateUrl: 'app.html'
 })
 export class MyApp {
-  rootPage:any = SignupPage;
+  rootPage:any = Home2Page;
 
   constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen) {
     platform.ready().then(() => {

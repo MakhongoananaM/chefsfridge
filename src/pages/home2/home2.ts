@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-
+import { ViewPage } from '../view/view';
 /**
  * Generated class for the Home2Page page.
  *
@@ -22,4 +22,7 @@ export class Home2Page {
     console.log('ionViewDidLoad Home2Page');
   }
 
+  viewRecipe(){
+    this.navCtrl.push(ViewPage);
+  }
 }

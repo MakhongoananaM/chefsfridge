@@ -1,0 +1,46 @@
+<ion-header>
+  <div class="iconHolder">
+    <img src="../../assets/imgs/signUplogo.PNG" class="iconHomePage">
+
+    <ion-searchbar (ionInput)="getItems($event)" class="mySearchBar"></ion-searchbar>
+    </div>
+
+      <div class="navigationHolder">
+          <ion-icon ios="ios-refresh" md="md-refresh" class="myNavicon"></ion-icon>
+          <ion-icon ios="ios-basket" md="md-basket" class="myNavicon"></ion-icon>
+          <ion-icon ios="ios-contact" md="md-contact" class="myNavicon"></ion-icon>
+          <ion-icon ios="ios-power" md="md-power" class="myNavicon" (click)="userLogOut()"></ion-icon>
+        </div>
+  
+</ion-header>
+<ion-content> 
+<img src="../../assets/imgs/food1.jpg" class="image" >
+
+
+
+<h2>Marty McFly</h2>
+<ion-list>
+  <ion-item>
+    <h2>Ingredients</h2>
+   
+  </ion-item>
+  <ion-item>
+      <p>Ingredients</p>
+  <ion-input>
+    
+  </ion-input>
+</ion-item>
+</ion-list>
+<form action="/action_page.php">
+  Ingredients:<br>
+  <input type="text" >
+  <br><br>
+  instruction:<br>
+  <input type="text" >
+  <br><br>
+  
+  </form>
+
+
+  
+</ion-content>
