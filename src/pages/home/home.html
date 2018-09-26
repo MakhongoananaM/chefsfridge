@@ -2,6 +2,10 @@
   <div class="iconHolder">
     <img src="../../assets/imgs/signUplogo.PNG" class="iconHomePage">
 
+
+
+ 
+
     <ion-searchbar (ionInput)="getItems($event)" class="mySearchBar"></ion-searchbar>
     
     </div>
@@ -24,7 +28,7 @@
           <h2>Chefs Fridge</h2>
           <p>{{a.name}}</p>
         </ion-item>
-        <img src={{a.image}}>
+        <img src={{item.image}}>
         <ion-card-content>
           <p>{{a.description}}</p>
         </ion-card-content>

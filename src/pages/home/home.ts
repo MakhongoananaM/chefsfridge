@@ -15,23 +15,59 @@ export class HomePage {
 
   recipe = [];
   count:number = 0;
-
+  items=[]; 
+  dishes=[]
+  val;
   constructor(public navCtrl: NavController, private chefsFridge: ChefsFridgeProvider) {
-   this.chefsFridge.retreiveRecipe().then((data:any)=>{
+  //  this.chefsFridge.retreiveRecipe().then((data:any)=>{
 
      //console.log(data);
-     this.recipe = data
-     console.log(this.recipe);
+    //  this.recipe = data
+    //  console.log(this.recipe);
      
      
-   } , (error)=>{
-    
+  //  } , (error)=>{
+    // this.chefsFridge.getSearch2().then((data:any)=>{
+    //   this. dishes = data;
+    //   console.log(this.dishes);
+    // })
      
-   })
+  //  })
    
   }
 
+  ionViewDidLoad() {
+    //cheating the code to display as default
+   this.chefsFridge.getSearch3().then((data:any)=>{
+      this. dishes = data;
+      console.log(this.dishes);
+    })
+  }
+
+  getItems(event,val){
+    //cheating the code to display as default
+    if (event.target.value.toLowerCase().length == 0){
+      this.chefsFridge.getSearch2().then((data:any)=>{
+        this. dishes = data;
+        console.log(this.dishes);
+      })
+    }
+    else{
+      this.chefsFridge.getSearch(event.target.value).then((data:any)=>{
+        this. dishes = data;
+        console.log(this.dishes); 
+      })//lowercase
+      if (val && val.trim()!= ''){
+        this.dishes = this.dishes.filter((data)=>{
+          return (data.name.toLowerCase().indexOf(val.toLowerCase()) > -1);
+        })
+      }
+    }
   
+  
+  
+
+  }
  userLogOut(){
     this.chefsFridge.userLogOut();
     console.log("logging out");
