@@ -86,5 +86,9 @@
         <variable name="PHOTO_LIBRARY_USAGE_DESCRIPTION" value="your usage message" />
     </plugin>
     <plugin name="cordova-plugin-crop" spec="^0.4.0" />
+<<<<<<< HEAD
     <engine name="android" spec="~7.0.0" />
+=======
+    <engine name="android" spec="7.0.0" />
+>>>>>>> 8236c9065b37620f83c322ede1c250a05b7a8995
 </widget>

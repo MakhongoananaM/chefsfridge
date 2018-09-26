@@ -1,0 +1,125 @@
+<ion-header class="ionicHeader">
+    <div class="iconHolder">
+   
+      <ion-icon ios="ios-arrow-back" md="md-arrow-back" class="backIcon" (click)="back()"></ion-icon>
+      <ion-icon ios="ios-create" md="md-create" class="createIcon" (click)="edit()"></ion-icon>
+      </div>
+          <img src="{{propic}}"  height ="105%"alt="Italian Trulli" class="profileImage">
+          <p class="userName"> {{name}} {{surname}}<p>
+            <p class="userEmail">{{email}}<p>
+               
+   </ion-header>
+   
+   <ion-content padding class="profilecard">
+      <ion-fab bottom right class="fabBtn">
+          <button ion-fab color="light" class="addButton"> <ion-icon ios="ios-add" md="md-add"></ion-icon></button>
+        </ion-fab>
+      <ion-card>
+
+          <ion-item>
+            <ion-avatar item-start>
+                <img src="../../assets/imgs/logo2.png" class="myLogo">
+            </ion-avatar>
+            <h2>Marty McFly</h2>
+            <p>November 5, 1955</p>
+          </ion-item>
+        
+          <img src="../../assets/imgs/helloImage.jpg" class="myLogo">
+        
+          <ion-card-content>
+            <p>Wait a minute. Wait a minute, Doc. Uhhh... Are you telling me that you built a time machine... out of a DeLorean?! Whoa. This is heavy.</p>
+          </ion-card-content>
+        
+          <ion-row>
+            <ion-col>
+              <button ion-button icon-start clear small>
+                <ion-icon name="thumbs-up"></ion-icon>
+                <div>12 Likes</div>
+              </button>
+            </ion-col>
+            <ion-col>
+              <button ion-button icon-start clear small>
+                <ion-icon name="text"></ion-icon>
+                <div>4 Comments</div>
+              </button>
+            </ion-col>
+            <ion-col center text-center>
+              <ion-note>
+                11h ago
+              </ion-note>
+            </ion-col>
+          </ion-row>
+        
+        </ion-card>
+        <ion-card>
+
+            <ion-item>
+              <ion-avatar item-start>
+                  <img src="../../assets/imgs/logo2.png" class="myLogo">
+              </ion-avatar>
+              <h2>Marty McFly</h2>
+              <p>November 5, 1955</p>
+            </ion-item>
+          
+            <img src="../../assets/imgs/helloImage.jpg" class="myLogo">
+          
+            <ion-card-content>
+              <p>Wait a minute. Wait a minute, Doc. Uhhh... Are you telling me that you built a time machine... out of a DeLorean?! Whoa. This is heavy.</p>
+            </ion-card-content>
+          
+            <ion-row>
+              <ion-col>
+                <button ion-button icon-start clear small>
+                  <ion-icon name="thumbs-up"></ion-icon>
+                  <div>12 Likes</div>
+                </button>
+              </ion-col>
+              <ion-col>
+                <button ion-button icon-start clear small>
+                  <ion-icon name="text"></ion-icon>
+                  <div>4 Comments</div>
+                </button>
+              </ion-col>
+              <ion-col center text-center>
+                <ion-note>
+                  11h ago
+                </ion-note>
+              </ion-col>
+            </ion-row>
+          
+          </ion-card>
+   </ion-content>
+<!-- <ion-header>
+    <div class="iconHolder">
+      <img src="../../assets/imgs/signUplogo.PNG" class="iconHomePage">
+      <ion-searchbar (ionInput)="getItems($event)" class="mySearchBar"></ion-searchbar>
+      </div>
+        <div class="navigationHolder">
+            <ion-icon ios="ios-refresh" md="md-refresh" class="myNavicon"></ion-icon>
+            <ion-icon ios="ios-basket" md="md-basket" class="myNavicon"></ion-icon>
+            <ion-icon ios="ios-contact" md="md-contact" class="myNavicon"></ion-icon>
+            <ion-icon ios="ios-power" md="md-power" class="myNavicon" (click)="userLogOut()"></ion-icon>
+          </div>
+  </ion-header>
+
+<ion-content padding>
+  <img src="{{propic}}" alt="Picture">
+  <p>
+    name:{{name}}
+  </p>
+  <div class="aboveImageHolder">
+      <img src="../../assets/imgs/banner.png" >
+    </div>
+
+    <div class="profilePicHolder">
+      
+      </div>
+      <ion-item>
+        <ion-input [(ngModel)]="name"></ion-input>
+      </ion-item>
+      <ion-item>
+          <ion-input [(ngModel)]="surname"></ion-input>
+        </ion-item>
+        
+      <button ion-button (click)="updateProfile()">Retrieve</button> 
+</ion-content> -->

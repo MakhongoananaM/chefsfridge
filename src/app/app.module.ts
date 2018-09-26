@@ -10,9 +10,19 @@ import { ChefsFridgeProvider } from '../providers/chefs-fridge/chefs-fridge';
 import { HttpClientModule } from '@angular/common/http';
 import { SignInPage } from '../pages/sign-in/sign-in';
 import { AdminPage } from '../pages/admin/admin';
+<<<<<<< HEAD
 import { Home2Page } from '../pages/home2/home2';
 import { ViewPage } from '../pages/view/view';
 
+=======
+import {ProfilePage} from '../pages/profile/profile';
+import { EditProfilePage } from '../pages/edit-profile/edit-profile';
+import { SearchPage } from '../pages/search/search';
+import { CategoryPage } from '../pages/category/category';
+import { VegetarianPage } from '../pages/vegetarian/vegetarian';
+import { VeganPage } from '../pages/vegan/vegan';
+import { MeatloverPage } from '../pages/meatlover/meatlover';
+>>>>>>> 8236c9065b37620f83c322ede1c250a05b7a8995
 
 
 @NgModule({
@@ -22,8 +32,18 @@ import { ViewPage } from '../pages/view/view';
     SignupPage,
     SignInPage,
     AdminPage,
+<<<<<<< HEAD
     Home2Page,
     ViewPage
+=======
+    ProfilePage,
+    EditProfilePage,
+    SearchPage,
+    CategoryPage,
+    VegetarianPage,
+    VeganPage,
+    MeatloverPage
+>>>>>>> 8236c9065b37620f83c322ede1c250a05b7a8995
   ],
   imports: [
     BrowserModule,HttpClientModule ,
@@ -36,8 +56,18 @@ import { ViewPage } from '../pages/view/view';
     SignupPage,
     SignInPage,
     AdminPage,
+<<<<<<< HEAD
     Home2Page,
     ViewPage
+=======
+    ProfilePage,
+    EditProfilePage,
+    SearchPage,
+    CategoryPage,
+    VegetarianPage,
+    VeganPage,
+    MeatloverPage
+>>>>>>> 8236c9065b37620f83c322ede1c250a05b7a8995
   ],
   providers: [
     StatusBar,

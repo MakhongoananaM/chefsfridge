@@ -1,5 +1,8 @@
 export interface recipe{
     name;
+    description;
     ingredients;
-    direction;
+    instructions;
+    category;
+    sub_category;
 }

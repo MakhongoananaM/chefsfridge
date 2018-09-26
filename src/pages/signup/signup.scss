@@ -6,6 +6,7 @@
     
 }
 
+<<<<<<< HEAD
 .mySection1{
     border: dotted 2px black;
     position: relative;
@@ -35,6 +36,35 @@
     position: absolute;
     top: 0%;
     left:30%;
+=======
+.mylogoHolder{
+    border: dotted 0px black;
+    position: relative;
+    top: 5%;
+    height: 10%;  
+}
+
+.mySection1{
+    border: dotted 0px black;
+    position: absolute;
+    top: 35%;
+    
+}
+
+.myFooter{
+    border: dotted 0px black;
+    position: absolute;
+    top: 86%;
+    width: 100%;
+    color: cornflowerblue;
+    height: 0%;
+}
+
+.myLogo1{
+    width:20%;
+    position: absolute;
+    top: 0%;
+>>>>>>> 8236c9065b37620f83c322ede1c250a05b7a8995
 }
 
 .myHeaderImage{
@@ -44,6 +74,7 @@
 
 .mySignInCard{
     position: relative;
+<<<<<<< HEAD
     top: 7%;
 
 }
@@ -53,6 +84,10 @@
     top: 10%;
     width: 100%;
     margin-left: -5%;
+=======
+    top: 15%;
+    width: 125%;
+>>>>>>> 8236c9065b37620f83c322ede1c250a05b7a8995
 }
 
 .mySignInBtn{
@@ -70,6 +105,7 @@
 }
 
 .belowImage1{
+<<<<<<< HEAD
     display: block;
     margin: 20% 20% auto;
     position: relative;
@@ -81,6 +117,13 @@
     position: relative;
     margin-top: 1%;
     left: 45%;  
+=======
+    width:12%;
+    margin-left: 41%;
+    position: absolute;
+    margin-top: 7%;
+    
+>>>>>>> 8236c9065b37620f83c322ede1c250a05b7a8995
 }
 
 .mySignInButton{
@@ -94,6 +137,7 @@
     position: relative;
     top: 8%;
 }
+<<<<<<< HEAD
 /* On screens that are 1360px wide or less, go from four columns to two columns */
 @media screen and (min-width: 767px) {
     @media screen and (max-width: 1025px) {
@@ -170,3 +214,5 @@
              .mySignInCard{
               width: 123%;             
                           }}}}}     
+=======
+>>>>>>> 8236c9065b37620f83c322ede1c250a05b7a8995

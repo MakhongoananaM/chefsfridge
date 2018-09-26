@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <ion-header class="ionicHeader">
   <div class="iconHolder">
    
@@ -19,4 +20,65 @@
 
    
     
+=======
+<ion-header>
+  <div class="iconHolder">
+    <img src="../../assets/imgs/signUplogo.PNG" class="iconHomePage">
+
+
+
+ 
+
+    <ion-searchbar (ionInput)="getItems($event)" class="mySearchBar"></ion-searchbar>
+    
+    </div>
+
+      <div class="navigationHolder">
+          <ion-icon ios="ios-refresh" md="md-refresh" class="myNavicon"></ion-icon>
+          <ion-icon ios="ios-basket" md="md-basket" class="myNavicon" (click)="Category()"></ion-icon>
+          <ion-icon ios="ios-contact" md="md-contact" class="myNavicon" (click)="profile()"></ion-icon>
+          <ion-icon ios="ios-power" md="md-power" class="myNavicon" (click)="userLogOut()"></ion-icon>
+        </div>
+  
+</ion-header>
+
+<ion-content padding>
+  
+    <ion-card *ngFor="let item of dishes" >
+        <ion-item>
+          <ion-avatar item-start>
+            <img src="../../assets/imgs/signUplogo.PNG">
+          </ion-avatar>
+          <h2>Chefs Fridge</h2>
+          <p>{{item.name}}</p>
+        </ion-item>
+        <img src={{item.image}}>
+        <ion-card-content>
+          <p>{{item.description}}</p>
+        </ion-card-content>
+        <ion-row>
+          <ion-col>
+            <button ion-button icon-start clear small (click)="likes(a.key)">
+              <ion-icon name="thumbs-up" ></ion-icon>
+              <div>{{item.likes}} Likes</div>
+            </button>
+          </ion-col>
+          <ion-col>
+            <button ion-button icon-start clear small>
+              <ion-icon name="text"></ion-icon>
+              <div>4 Comments</div>
+            </button>
+          </ion-col>
+          <ion-col center text-center>
+            <ion-note>
+              11h ago
+            </ion-note>
+          </ion-col>
+        </ion-row>
+      
+      </ion-card>
+
+     
+>>>>>>> 8236c9065b37620f83c322ede1c250a05b7a8995
 </ion-content>
+

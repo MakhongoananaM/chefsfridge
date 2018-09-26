@@ -1,0 +1,98 @@
+page-profile {
+    .iconHolder{
+        border: dotted 0px black;
+        position: relative;
+        top:1%;
+     
+     }
+     .iconHomePage{
+        width: 15%;
+     }
+     
+     .createIcon{
+        float: right;
+        font-size: 240%;
+        position: relative;
+        top: 14px;
+        right: 8%;
+        color: white;
+     }
+     
+     .ionicHeader{
+        background-color:#a1c45a;
+        height: 27%;
+     }
+     
+     .backIcon{
+        float: left;
+        font-size: 240%;
+        position: relative;
+        top: 14px;
+        left: 8%;
+        color: white;
+     }
+     
+     
+     
+     .profileImage{
+        border: solid 5px #a1c45a;
+        position: relative;
+        margin-top: 25%;
+        width: 37%;
+        left: 50%;
+        height: 70%;
+        border-radius: 50%;
+     }
+     
+     .nameHolder{
+        border: solid 0px cadetblue;
+        position: absolute;
+        margin-top: 10%;
+
+     
+     }
+     
+     .userName{
+        font-size: 2em;
+        position: relative;
+        top: -90%;
+        left: 10%;
+        color: White;
+        font-weight: bold;
+     }
+     
+     
+     
+     .userEmail{
+        font-size: 1em;
+        position: relative;
+        top: -99%;
+        left: 21%;
+        color: white;
+        font-weight: bold;  
+     }
+
+     .addNewPost{
+         border:solid 1px #a1c45a;
+         background-color: white;
+         color:#a1c45a;
+         position: relative;
+         display: block;
+         margin : 0 auto;
+     }
+
+    //  .addButton{
+    //   top:20%;
+    //      background-color: rgb(255, 174, 0);
+    //  }
+     .profilecard{
+top: 0%;
+     }
+
+     .fab{
+     }
+
+     .fabBtn{
+         color: #a1c45a;
+     }
+}

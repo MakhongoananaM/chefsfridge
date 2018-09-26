@@ -1,4 +1,5 @@
 <ion-content padding >
+<<<<<<< HEAD
  <!--  <div class="forms">
   <img src="../../assets/imgs/logo1.png" alt="blank">
   <ion-item class="list">
@@ -8,17 +9,54 @@
   <ion-item class="list">
     <ion-input type="text" placeholder="Surname" [(ngModel)]="user.surname"></ion-input>
   </ion-item>
+=======
+ 
+<ion-content>
+  <div class="myHeader">
+    <img src="../../assets/imgs/header.jpg" class="myHeaderImage">
+    <img src="../../assets/imgs/logo2.png" class="myLogo">
+  </div>
+    
+    <div class="mySection1">
+        <ion-card class="mySignInCard">
+            <ion-card-header style="background-color:rgb(236, 170, 38); color:whitesmoke;font-weight:bold">
+              Sign up
+            </ion-card-header>
+            <ion-card-content style="position:relative;">
+                <ion-list>
+                    <ion-item>
+                      <ion-input type="text" placeholder="Name" [(ngModel)]="user.name"></ion-input>
+                    </ion-item>
+>>>>>>> 8236c9065b37620f83c322ede1c250a05b7a8995
 
-  <ion-item class="list">
-      <ion-input type="text" placeholder="Email" [(ngModel)]="user.email"></ion-input>
-  </ion-item>
+                    <ion-item>
+                          <ion-input type="text" placeholder="Surname"  [(ngModel)]="user.surname"></ion-input>
+                        </ion-item>
 
-  <ion-item class="list">
-      <ion-input type="password" placeholder="Password" [(ngModel)]="user.password"></ion-input>
-  </ion-item>
+                        <ion-item>
+                              <ion-input type="text" placeholder="Email address"  [(ngModel)]="user.email"></ion-input>
+                            </ion-item>
+                    <ion-item>
+                      <ion-input type="password" placeholder="Password"  [(ngModel)]="user.password"></ion-input>
+                    </ion-item>
 
-  <button ion-button block class="btn" (click)="signUp(user)">Sign Up</button>
+                    <ion-item>
+                        <button ion-button block class="mySignInButton" (click)="signUp(user)">Sign up</button>                        
+                      </ion-item> 
+                     
+                  </ion-list>
+            </ion-card-content>
+          </ion-card>
+      </div>
+      <div class="myFooter">
+        <p style="margin-left: 30%; font-weight:bold; color: rgb(236, 170, 38);" (click)="backToSignInPage()">Go Back To Sign In</p>
+        <img src="../../assets/imgs/below.jpg" class="belowImage">
+      </div>
+       
+     
+</ion-content>
 
+<<<<<<< HEAD
 
   <div>
       <button class="privacy" ion-button clear>Privacy Policy</button>
@@ -75,4 +113,6 @@
         </div>
 </ion-content>
 
+=======
+>>>>>>> 8236c9065b37620f83c322ede1c250a05b7a8995
 </ion-content>
