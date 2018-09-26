@@ -46,8 +46,8 @@
 
 .mySection1{
     border: dotted 0px black;
-    position: absolute;
-    top: 35%;
+    position: relative;
+    top: 30%;
     
 }
 
@@ -74,18 +74,7 @@
 
 .mySignInCard{
     position: relative;
-<<<<<<< HEAD
-    top: 7%;
-
-}
-
-.mySignupCard{
-    position: relative;
-    top: 10%;
-    width: 100%;
-    margin-left: -5%;
-=======
-    top: 15%;
+    margin-top:10px;    
     width: 125%;
 >>>>>>> 8236c9065b37620f83c322ede1c250a05b7a8995
 }
@@ -216,3 +205,13 @@
                           }}}}}     
 =======
 >>>>>>> 8236c9065b37620f83c322ede1c250a05b7a8995
+
+.signinHeader1{
+    background-color:rgb(236, 170, 38); 
+    color:whitesmoke;
+    border: dotted 0px black;
+    height: 25%;
+    font-size: 1.5em;
+    padding: 3%;
+    
+}

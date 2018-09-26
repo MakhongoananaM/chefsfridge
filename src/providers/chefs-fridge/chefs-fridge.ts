@@ -235,6 +235,100 @@ export class ChefsFridgeProvider {
     })
       
   }
+
+  retrieveARecipe(key){
+    return new Promise((resolve, reject) => {
+      firebase.database().ref('recipes/'+key).on('value',(data)=>{
+          var recipe = data.val();
+          console.log(recipe);
+          resolve(recipe);
+      })
+    })
+  }
+
+  itemSearch(category, sub_category, items:any){
+
+    var  commonRecipes = [];
+    var ingredients = [];
+    var temp = [];
+    var temp2 = [];
+    var count = 0;
+    var searchedrecipe = [];
+
+    return new Promise((resolve, reject) => {
+      firebase.database().ref('recipes/').on('value',(data)=>{
+        var recipes = data.val();
+        var keys = Object.keys(recipes);
+
+        for(var i = 0; i < keys.length; i++){
+          var k = keys[i];
+          // console.log(k);
+          if(recipes[k].category == category && recipes[k].sub_category == sub_category){
+
+            var name = recipes[k].name;
+            var description = recipes[k].description
+            var ingredients = recipes[k].ingredients
+            var methods = recipes[k].directions
+            var image = recipes[k].image 
+
+            let obj = {
+              key: k,
+              name: name,
+              description: description,
+              ingredients: ingredients,
+              methods: methods,
+              image: image,
+            }
+  
+            commonRecipes.push(obj);
+            // console.log(commonRecipes);
+          }
+        }
+      });
+
+      console.log("new recipe");
+      
+     console.log(commonRecipes);
+
+     for (let i = 0; i < commonRecipes.length; i++){
+      ingredients = commonRecipes[i].ingredients;
+
+      console.log(ingredients);
+      count = 0;
+
+      console.log("Refreash "+count);
+      for (let b = 0; b < ingredients.length; b++) {
+        const element = ingredients[b];
+        console.log(element);
+        temp = element.split(",");
+        console.log(temp);
+
+        for (let c = 0; c < temp.length; c++) {
+         temp2 = temp[c].split(" ");
+         console.log(temp2);
+         for (let e = 0; e < temp2.length; e++) {
+           for (let j = 0; j < items.length; j++) {
+            if(items[j] == temp2[e]){
+              count += 1
+              console.log("Count "+count);
+              console.log('item found');
+              if(count <= 1){
+                console.log("New search");
+                searchedrecipe.push(commonRecipes[i]);
+                console.log(searchedrecipe);
+                
+              }
+
+            }
+            
+           }   
+          }        
+        }
+      }
+    }
+    resolve(searchedrecipe);
+    });
+  }
 //update
   updateProfile(name, surname){
 

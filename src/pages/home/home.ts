@@ -10,7 +10,7 @@ import { ChefsFridgeProvider } from '../../providers/chefs-fridge/chefs-fridge';
 import {SignInPage} from '../../pages/sign-in/sign-in'; 
 import { ProfilePage } from '../profile/profile';
 import { CategoryPage } from '../category/category';
->>>>>>> 8236c9065b37620f83c322ede1c250a05b7a8995
+import { ViewRecipePage } from '../view-recipe/view-recipe';
 
 @Component({
   selector: 'page-home',
@@ -106,5 +106,8 @@ export class HomePage {
   //   this.count += 1;
   //   this.chefsFridge.likes(key, this.count);
   // }
->>>>>>> 8236c9065b37620f83c322ede1c250a05b7a8995
+
+  view(key){
+    this.navCtrl.push(ViewRecipePage, {key:key});
+  }
 }

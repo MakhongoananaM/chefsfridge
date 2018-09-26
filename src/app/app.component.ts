@@ -57,14 +57,7 @@ import { MeatloverPage } from '../pages/meatlover/meatlover';
 })
 export class MyApp {
 <<<<<<< HEAD
-  rootPage:any = HomePage   ;
-=======
-<<<<<<< HEAD
-  rootPage:any =SearchPage;
-=======
-  rootPage:any = SignInPage;
->>>>>>> 91b603c86554dc42fbc7aef9ca0b966da12445fc
->>>>>>> fc01fb4b4aad03b344f777bec012d26eff0b6bd5
+  rootPage:any = HomePage;
 
   constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen) {
     platform.ready().then(() => {

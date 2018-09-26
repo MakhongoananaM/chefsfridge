@@ -22,7 +22,7 @@ import { CategoryPage } from '../pages/category/category';
 import { VegetarianPage } from '../pages/vegetarian/vegetarian';
 import { VeganPage } from '../pages/vegan/vegan';
 import { MeatloverPage } from '../pages/meatlover/meatlover';
->>>>>>> 8236c9065b37620f83c322ede1c250a05b7a8995
+import { ViewRecipePage } from '../pages/view-recipe/view-recipe';
 
 
 @NgModule({
@@ -42,8 +42,8 @@ import { MeatloverPage } from '../pages/meatlover/meatlover';
     CategoryPage,
     VegetarianPage,
     VeganPage,
-    MeatloverPage
->>>>>>> 8236c9065b37620f83c322ede1c250a05b7a8995
+    ViewRecipePage
+    MeatloverPage,
   ],
   imports: [
     BrowserModule,HttpClientModule ,
@@ -66,8 +66,8 @@ import { MeatloverPage } from '../pages/meatlover/meatlover';
     CategoryPage,
     VegetarianPage,
     VeganPage,
-    MeatloverPage
->>>>>>> 8236c9065b37620f83c322ede1c250a05b7a8995
+    MeatloverPage,
+    ViewRecipePage
   ],
   providers: [
     StatusBar,
