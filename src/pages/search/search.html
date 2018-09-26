@@ -17,36 +17,115 @@
 
 
 <ion-content class="myContent">
+    <h3>Meat</h3>
   <div class="scrollbar">
+      
     <div class="image">
-        <img src="../../assets/icon/meat-icon/chicken.jpg" alt="" width="50%" height="50%">
+        <img src="../../assets/icon/icons/icons8-thanksgiving-turkey-64.png" alt="" width="50%" height="50%">
+        <h6>Turkey</h6>
     </div>
     <div class="image">
         <img src="../../assets/icon/meat-icon/Ribs.jpg" alt="" width="50%" height="50%">
+        <h6>Ribs</h6>
     </div>
     <div class="image">
-        <img src="../../assets/icon/meat-icon/steak.png" alt="" >
-    </div>
-    <div class="image">
-        <img src="../../assets/icon/meat-icon/chicken.jpg" alt="" width="50%" height="50%">
-    </div>
-    <div class="image">
-        <img src="../../assets/icon/meat-icon/chicken.jpg" alt="" width="50%" height="50%">
+        <img src="../../assets/icon/icons/icons8-steak-64.png" alt="" width="50%" height="50%">
+        <h6>Steak</h6>
     </div>
     <div class="image">
         <img src="../../assets/icon/meat-icon/chicken.jpg" alt="" width="50%" height="50%">
+        <h6>Chicken</h6>
     </div>
     <div class="image">
-        <img src="../../assets/icon/meat-icon/chicken.jpg" alt="" width="50%" height="50%">
+        <img src="../../assets/icon/icons/icons8-salmon-64.png" alt="" width="50%" height="50%">
+        <h6>Salmon</h6>
     </div>
     <div class="image">
-        <img src="../../assets/icon/meat-icon/chicken.jpg" alt="" width="50%" height="50%">
+        <img src="../../assets/icon/icons/icons8-salami-64.png" alt="" width="50%" height="50%">
+        <h6>Salami</h6>
     </div>
     <div class="image">
-        <img src="../../assets/icon/meat-icon/chicken.jpg" alt="" width="50%" height="50%">
+        <img src="../../assets/icon/icons/icons8-meat-64.png" alt="" width="50%" height="50%">
+        <h6>Pork</h6>
     </div>
+    <div class="image">
+        <img src="../../assets/icon/icons/icons8-gammon-64 - Copy.png" alt="" width="50%" height="50%">
+        <h6>gammon</h6>
+    </div>
+    <div class="image">
+            <img src="../../assets/icon/icons/icons8-beef-64 - Copy.png" alt="" width="50%" height="50%">
+            <h6>Beef</h6>
+    </div>
+    <div class="image">
+        <img src="../../assets/icon/icons/icons8-barbecue-sausage-64 - Copy.png" alt="" width="50%" height="50%">
+        <h6>Sausage</h6>
+    </div>    
+    <div class="image">
+            <img src="../../assets/icon/icons/icons8-bacon-64 - Copy.png" alt="" width="50%" height="50%">
+            <h6>Bacon</h6>
+        </div>
   </div>
-
+  <h3>Vegetables</h3>
+  <div class="scrollbar">
+        <div class="image">
+            <img src="../../assets/icon/Vegi-Icon/broccoly.jpg" alt="" width="20%" height="20%">
+        </div>
+        <div class="image">
+            <img src="../../assets/icon/Vegi-Icon/carrot.png" alt="" width="50%" height="50%">
+        </div>
+        <div class="image">
+            <img src="../../assets/icon/Vegi-Icon/chillies.png" alt="" >
+        </div>
+        <div class="image">
+            <img src="../../assets/icon/Vegi-Icon/colliflower.jpg" alt="" width="50%" height="50%">
+        </div>
+        <div class="image">
+            <img src="../../assets/icon/Vegi-Icon/eggplant.png" alt="" width="50%" height="50%">
+        </div>
+        <div class="image">
+            <img src="../../assets/icon/Vegi-Icon/garllic.jpg" alt="" width="50%" height="50%">
+        </div>
+        <div class="image">
+            <img src="../../assets/icon/Vegi-Icon/greenpepper.png" alt="" width="50%" height="50%">
+        </div>
+        <div class="image">
+            <img src="../../assets/icon/Vegi-Icon/onion.jpg" alt="" width="50%" height="50%">
+        </div>
+        <div class="image">
+            <img src="../../assets/icon/Vegi-Icon/pumkin.png" alt="" width="50%" height="50%">
+        </div>
+      </div>
+<h3>Fruits</h3>
+      <div class="scrollbar">
+            <div class="image">
+                <img src="../../assets/icon/Fruit-icon/apple.png" alt="" width="20%" height="20%">
+            </div>
+            <div class="image">
+                <img src="../../assets/icon/Fruit-icon/avocado.png" alt="" width="50%" height="50%">
+            </div>
+            <div class="image">
+                <img src="../../assets/icon/Fruit-icon/banana.png" alt="" >
+            </div>
+            <div class="image">
+                <img src="../../assets/icon/Fruit-icon/blueberries.png" alt="" width="50%" height="50%">
+            </div>
+            <div class="image">
+                <img src="../../assets/icon/Fruit-icon/cherries.png" alt="" width="50%" height="50%">
+            </div>
+            <div class="image">
+                <img src="../../assets/icon/Fruit-icon/grapes.png" alt="" width="50%" height="50%">
+            </div>
+            <div class="image">
+                <img src="../../assets/icon/Fruit-icon/lemon.png" alt="" width="50%" height="50%">
+            </div>
+            <div class="image">
+                <img src="../../assets/icon/Fruit-icon/mango.jpg" alt="" width="50%" height="50%">
+            </div>
+            <div class="image">
+                <button class="button profilebutton icon ion-camera" ng-click="upload()"></button>
+                <img src="../../assets/icon/Fruit-icon/orange.png" alt="" width="50%" height="50%">
+            </div>
+          </div>
 <button ion-button class="btn">Submit</button>
 <ion-content padding>
   
@@ -73,7 +152,7 @@
 <button ion-button (click)="addItem()">Add Item</button>
 <button ion-button (click)="search()">Search</button>
 
-<ion-list *ngFor="let a of finalRecipe">
+<ion-list *ngFor="let a of searchedrecipe">
     {{a.name}}<br>
     {{a.description}}<br>
     <img src="{{a.image}}" alt="">

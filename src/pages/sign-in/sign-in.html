@@ -6,7 +6,20 @@
       </div>
       
       <div class="mySection">
-          <ion-card class="mySignInCard">
+        <h3 class="signinHeader"> Sign in</h3>
+          <ion-list >
+              <ion-item no-lines>
+                <ion-input type="text" placeholder="email" [(ngModel)]="user.email" ></ion-input>
+              </ion-item>
+              <ion-item no-lines>
+                <ion-input type="password" placeholder="Password" [(ngModel)]="user.password"></ion-input>
+              </ion-item>
+              <ion-item no-lines>
+                  <button ion-button block class="mySignInButton" (click)="userSignIn(user)">Sign in</button>                        
+                </ion-item> 
+                <p style="text-align:center; font-weight:bold; color: #a1c45a;" (click)="userResetPassword()"> Forgot password</p>
+            </ion-list>
+          <!-- <ion-card class="mySignInCard">
               <ion-card-header style="background-color:rgb(236, 170, 38); color:whitesmoke;font-weight:bold">
                 Sign in
               </ion-card-header>
@@ -24,12 +37,17 @@
                         <p style="text-align:center; font-weight:bold; color: #a1c45a;" (click)="userResetPassword()"> Forgot password</p>
                     </ion-list>
               </ion-card-content>
-            </ion-card>
+            </ion-card> -->
         </div>
         <div class="myFooter">
-            <p style="margin-left: 30%; font-weight:bold; color: rgb(236, 170, 38);" (click)="userCreateAccount()">Create account</p>
-            <img src="../../assets/imgs/below.jpg" class="belowImage">
+            
           </div>
+
+          <ion-footer>
+            <ion-toolbar>
+              <ion-title><p style="font-weight:bold; color: rgb(236, 170, 38); text-align: center;" (click)="userCreateAccount()">Sign up</p></ion-title>
+            </ion-toolbar>
+          </ion-footer>
          
        
   </ion-content>

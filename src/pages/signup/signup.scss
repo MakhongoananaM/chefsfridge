@@ -15,8 +15,8 @@
 
 .mySection1{
     border: dotted 0px black;
-    position: absolute;
-    top: 35%;
+    position: relative;
+    top: 30%;
     
 }
 
@@ -42,7 +42,7 @@
 
 .mySignInCard{
     position: relative;
-    top: 15%;
+    margin-top:10px;    
     width: 125%;
 }
 
@@ -78,4 +78,14 @@
     color: rgb(236, 170, 38); 
     position: relative;
     top: 8%;
+}
+
+.signinHeader1{
+    background-color:rgb(236, 170, 38); 
+    color:whitesmoke;
+    border: dotted 0px black;
+    height: 25%;
+    font-size: 1.5em;
+    padding: 3%;
+    
 }

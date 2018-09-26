@@ -5,6 +5,7 @@ import { ChefsFridgeProvider } from '../../providers/chefs-fridge/chefs-fridge';
 import {SignInPage} from '../../pages/sign-in/sign-in'; 
 import { ProfilePage } from '../profile/profile';
 import { CategoryPage } from '../category/category';
+import { ViewRecipePage } from '../view-recipe/view-recipe';
 
 @Component({
   selector: 'page-home',
@@ -52,4 +53,8 @@ export class HomePage {
   //   this.count += 1;
   //   this.chefsFridge.likes(key, this.count);
   // }
+
+  view(key){
+    this.navCtrl.push(ViewRecipePage, {key:key});
+  }
 }

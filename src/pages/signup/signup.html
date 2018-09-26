@@ -1,13 +1,35 @@
-<ion-content padding >
+
  
-<ion-content>
+<ion-content padding>
   <div class="myHeader">
     <img src="../../assets/imgs/header.jpg" class="myHeaderImage">
     <img src="../../assets/imgs/logo2.png" class="myLogo">
   </div>
     
     <div class="mySection1">
-        <ion-card class="mySignInCard">
+        <h3 class="signinHeader1"> Sign up</h3>
+        <ion-list >
+            <ion-item no-lines>
+                <ion-input type="text" placeholder="Name" [(ngModel)]="user.name"></ion-input>
+              </ion-item>
+
+              <ion-item no-lines>
+                    <ion-input type="text" placeholder="Surname"  [(ngModel)]="user.surname"></ion-input>
+                  </ion-item>
+
+                  <ion-item no-lines>
+                        <ion-input type="text" placeholder="Email address"  [(ngModel)]="user.email"></ion-input>
+                      </ion-item>
+              <ion-item no-lines>
+                <ion-input type="password" placeholder="Password"  [(ngModel)]="user.password"></ion-input>
+              </ion-item>
+               
+            <ion-item no-lines>
+                <button ion-button block class="mySignInButton" (click)="signUp(user)">Sign up</button>                        
+              </ion-item> 
+             
+          </ion-list>
+        <!-- <ion-card class="mySignInCard">
             <ion-card-header style="background-color:rgb(236, 170, 38); color:whitesmoke;font-weight:bold">
               Sign up
             </ion-card-header>
@@ -34,14 +56,15 @@
                      
                   </ion-list>
             </ion-card-content>
-          </ion-card>
+          </ion-card> -->
       </div>
-      <div class="myFooter">
-        <p style="margin-left: 30%; font-weight:bold; color: rgb(236, 170, 38);" (click)="backToSignInPage()">Go Back To Sign In</p>
-        <img src="../../assets/imgs/below.jpg" class="belowImage">
-      </div>
+      
+
+      <ion-footer>
+        <ion-toolbar>
+          <ion-title> <p style="font-weight:bold; color: rgb(236, 170, 38);text-align: center;" (click)="backToSignInPage()">Sign In</p></ion-title>
+        </ion-toolbar>
+      </ion-footer>
        
      
-</ion-content>
-
 </ion-content>

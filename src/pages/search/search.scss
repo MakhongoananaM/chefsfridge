@@ -7,11 +7,11 @@ page-search {
     }
     .mySearchBar{
         display: block;
-        position: relative;
+        position: absolute;
         margin: 8% 0% auto; 
         border-color: rgb(0, 225, 255);
         border-style: solid;
-        font-size: 2em;
+        font-size: 1em;
     
     }
           .iconHolder{
@@ -39,6 +39,14 @@ page-search {
            opacity: 0.8;
            font-weight: bolder;
         }
+
+        .addbutton {
+            z-index: 2;
+            position: absolute;
+            left: 22%;
+            top: 8%;
+            margin: auto;
+        }
      
         .myNavicon:hover{
             color : rgb(236, 170, 38);
@@ -47,42 +55,46 @@ page-search {
         
      
         .mys{
-            
             float: right;
             right: 20%;
             background-color: white;
             position: relative;
             top:1%;
-            color: limegreen;
+            color: #a1c45a;
             font-size: 1.5em;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-weight: 900
         }
 
         
 
         .scrollbar{
-            
             display: flex;
             flex-flow: row nowrap;
-            height: 12vh;
+            height: 20vh;
             overflow-x: scroll;
             image:last-child{
             margin-right: 10px;
-            position: relative;
-            margin: 0% 0% auto;        
+            position: absolute;
+            margin: 0% 0% auto;  
+                  
             }
             .image{
                 flex: 0 0 auto;
                 margin-left: 10px;
-                border: solid 2px skyblue;
-                border-radius: 10%;
-
+                // border: solid 2px skyblue;
+                // border-radius: 10%;
+                h6{
+                    font-size:0.9em;
+                }
                 img{
-                    width: 80px;
+                    width: 60px;
                     height: 100%;
                     border-radius: 10%;
-                    border-color: limegreen;
                 }
+
             }
+            
         }
     
 }
