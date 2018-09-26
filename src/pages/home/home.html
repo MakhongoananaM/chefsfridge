@@ -20,15 +20,15 @@
 </ion-header>
 
 <ion-content padding>
-    <ion-card *ngFor="let a of recipe" >
-        <ion-item (click)="view(a.key)">
+    <ion-card *ngFor="let a of recipe" (click)="view(a.key)">
+        <ion-item >
           <ion-avatar item-start>
             <img src="../../assets/imgs/signUplogo.PNG">
           </ion-avatar>
           <h2>Chefs Fridge</h2>
           <p>{{a.name}}</p>
         </ion-item>
-        <img src={{item.image}}>
+        <img src={{a.image}}>
         <ion-card-content>
           <p>{{a.description}}</p>
         </ion-card-content>
