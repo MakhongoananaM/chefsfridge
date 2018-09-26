@@ -36,20 +36,20 @@ export class HomePage {
   dishes=[]
   val;
   constructor(public navCtrl: NavController, private chefsFridge: ChefsFridgeProvider) {
-  //  this.chefsFridge.retreiveRecipe().then((data:any)=>{
+   this.chefsFridge.retreiveRecipe().then((data:any)=>{
 
-     //console.log(data);
-    //  this.recipe = data
-    //  console.log(this.recipe);
+     console.log(data);
+     this.recipe = data
+     console.log(this.recipe);
      
      
-  //  } , (error)=>{
-    // this.chefsFridge.getSearch2().then((data:any)=>{
-    //   this. dishes = data;
-    //   console.log(this.dishes);
-    // })
+   } , (error)=>{
+    this.chefsFridge.getSearch2().then((data:any)=>{
+      this. dishes = data;
+      console.log(this.dishes);
+    })
      
-  //  })
+   })
    
   }
 
