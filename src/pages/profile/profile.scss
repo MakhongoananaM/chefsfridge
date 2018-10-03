@@ -1,98 +1,118 @@
-page-profile {
-    .iconHolder{
-        border: dotted 0px black;
+page-profile{
+    .appContainer{
+        border: solid 0px black;
         position: relative;
-        top:1%;
-     
-     }
-     .iconHomePage{
-        width: 15%;
-     }
-     
-     .createIcon{
-        float: right;
-        font-size: 240%;
+    }
+    .appHeader{
+        border: solid 0px black;
         position: relative;
-        top: 14px;
-        right: 8%;
+        top:0%;
+        height: 30%;
+        background-color: rgb(236, 170, 38);
+    }
+    .backButton{
         color: white;
-     }
-     
-     .ionicHeader{
-        background-color:#a1c45a;
-        height: 27%;
-     }
-     
-     .backIcon{
-        float: left;
-        font-size: 240%;
-        position: relative;
-        top: 14px;
-        left: 8%;
-        color: white;
-     }
-     
-     
-     
-     .profileImage{
-        border: solid 5px #a1c45a;
-        position: relative;
-        margin-top: 25%;
-        width: 37%;
-        left: 50%;
-        height: 70%;
-        border-radius: 50%;
-     }
-     
-     .nameHolder{
-        border: solid 0px cadetblue;
-        position: absolute;
-        margin-top: 10%;
-
-     
-     }
-     
-     .userName{
         font-size: 2em;
         position: relative;
-        top: -90%;
-        left: 10%;
-        color: White;
-        font-weight: bold;
-     }
-     
-     
-     
-     .userEmail{
-        font-size: 1em;
-        position: relative;
-        top: -99%;
-        left: 21%;
+        top: 10px;
+        left: 5%;
+    }
+    .editButton{
+        float: right;
         color: white;
-        font-weight: bold;  
-     }
-
-     .addNewPost{
-         border:solid 1px #a1c45a;
-         background-color: white;
-         color:#a1c45a;
-         position: relative;
-         display: block;
-         margin : 0 auto;
-     }
-
-    //  .addButton{
-    //   top:20%;
-    //      background-color: rgb(255, 174, 0);
-    //  }
-     .profilecard{
-top: 0%;
-     }
-
-     .fab{
-     }
-
-     .fabBtn{
-         color: #a1c45a;
-     }
+        font-size: 2em;
+        position: relative;
+        top: 10px;
+        right: 5%;
+    }
+    .cameraButton{
+        float: right;
+        color: white;
+        font-size: 2em;
+        position: relative;
+        top: 155px;
+        right: 0%; 
+    }
+    .imageHolder{
+        border: solid 0px black;
+        position: relative;
+        top:0%; 
+        width: 40%;
+        margin-left: auto;
+        margin-right: auto;
+        height: 140px;
+        border-radius: 50%;
+        top:70px;
+    }
+    .profileImage{
+        position: relative;
+        width: 100%;
+        height: 140px;
+        border-radius: 50%;
+    }
+    .usernameHolder{
+        border: solid 0px black;
+        position: relative;
+        top: 90px;
+        width: 72%;
+        margin-left: auto;
+        margin-right: auto;
+        height: 7%;
+        
+    }
+    .bioHolder{
+        border: solid 0px black;
+        position: relative;
+        top: 100px;
+        width: 85%;
+        margin-left: auto;
+        margin-right: auto;
+        height: 12%;
+    }
+    .usernameText{
+        font-size: 1.7em;
+        margin-bottom: 10px;
+        text-align: center;
+        font-weight: bold;
+        margin-top: 5px;
+    }
+    .bioText{
+        font-size: 1.5em;
+        margin-bottom: 10px;
+        text-align: center;
+        margin-top: 5px;
+    }
+    .sleeve{
+        border: solid 0px black;
+        position: relative;
+        top: 100px;
+        height: 5%;
+        background-color: rgb(236, 170, 38);
+    }
+    .addNewPost{
+        border: solid 2px #a1c45a;
+        position: relative;
+        top: 120px;
+        height: 24%;
+        width: 50%;
+        border-radius: 10px;
+        left: 2%;
+    }
+    .addNewPostIcon{
+        font-size: 5em;
+        position: relative;
+        left: 33%;
+        top: 15px;
+        color: #a1c45a;
+    }
+    .addPostText{
+        border: solid 0px black;
+        height: 25%;
+        position: relative;
+        top:5px;
+        text-align: center;
+        font-weight: bold;
+        font-size: 1.2em;
+        color: rgb(236, 170, 38);
+    }
 }

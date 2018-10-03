@@ -1,21 +1,69 @@
-<!--
-  Generated template for the EditProfilePage page.
-
-  See http://ionicframework.com/docs/components/#navigation for more info on
-  Ionic pages and navigation.
--->
-<ion-header>
-
-  <ion-navbar>
-    <ion-title>editProfile</ion-title>
-  </ion-navbar>
-
+<!-- <ion-header class="mainHeader">
+    
 </ion-header>
 
-
 <ion-content padding>
-    <div class="myImg">
-        <img src="../../assets/imgs/signUplogo.PNG" class="myLogo1" (click)="backToSignInPage()">
+    <img src="../../assets/imgs/default profile.png"  height ="105%"alt="Italian Trulli" class="profileImage">
+      <p class="updatePic"> update profile picture</p>
+
+      <div class="updateForm">
+        <p class="updateTitle"> Please update the below details</p>
+          <ion-list no-lines>
+              <ion-item  no-lines>
+                <ion-input type="text" placeholder="Name" [(ngModel)]="name"></ion-input>
+              </ion-item>
+              <ion-item  no-lines>
+                <ion-input type="text" placeholder="Surname" [(ngModel)]="surname"></ion-input>
+              </ion-item>
+              <ion-item  no-lines>
+                  <button ion-button block class="updateBtn" (click)="editUser()">Update here</button>                        
+                </ion-item> 
+               
+            </ion-list>
+        </div> -->
+  <!-- <div class="iconHolder">
+    <img src="../../assets/imgs/signUplogo.PNG" class="iconHomePage">
+    <ion-label class="mys">CATEGORY</ion-label>
+    </div>
+    <div class="mySection">
+      <h3 class="signinHeader">Profile</h3>
+        <ion-list >
+            <ion-item no-lines>
+              <ion-input type="text" placeholder="email" ></ion-input>
+            </ion-item>
+            <ion-item no-lines>
+              <ion-input type="password" placeholder="Password"></ion-input>
+            </ion-item>
+            <ion-item no-lines>
+                <button ion-button block class="mySignInButton" >Sign in</button>                        
+              </ion-item> 
+              <p style="text-align:center; font-weight:bold; color: #a1c45a;" > Forgot password</p>
+          </ion-list>
+
+
+
+
+
+
+        <ion-card class="mySignInCard">
+            <ion-card-header style="background-color:rgb(236, 170, 38); color:whitesmoke;font-weight:bold">
+              Sign in
+            </ion-card-header>
+            <ion-card-content style="position:relative;">
+                <ion-list>
+                    <ion-item>
+                      <ion-input type="text" placeholder="email" [(ngModel)]="user.email"></ion-input>
+                    </ion-item>
+                    <ion-item>
+                      <ion-input type="password" placeholder="Password" [(ngModel)]="user.password"></ion-input>
+                    </ion-item>
+                    <ion-item>
+                        <button ion-button block class="mySignInButton" (click)="userSignIn(user)">Sign in</button>                        
+                      </ion-item> 
+                      <p style="text-align:center; font-weight:bold; color: #a1c45a;" (click)="userResetPassword()"> Forgot password</p>
+                  </ion-list>
+            </ion-card-content>
+          </ion-card>
       </div>
      
       <div class="myprofile">
@@ -55,10 +103,10 @@
                   <ion-label><ion-icon ios="ios-clipboard" md="md-clipboard"></ion-icon></ion-label>
                 <ion-input type="text" placeholder="Bio"  ></ion-input>
               </ion-item>
-              <!-- <ion-item>
+              <ion-item>
                   <ion-label><ion-icon ios="ios-calendar" md="md-calendar"></ion-icon></ion-label>
                   <ion-input type="date" placeholder="Birthdate"></ion-input>
-                </ion-item> -->
+                </ion-item>
               <ion-item> <ion-label><ion-icon ios="ios-mail" md="md-mail"></ion-icon></ion-label>
                 <ion-input type="text" placeholder="Email address" ></ion-input>
               </ion-item>
@@ -81,5 +129,37 @@
             </ion-list>
           </ion-card-content>
         </ion-card>
-      </div>
-</ion-content>
+      </div> -->
+      <ion-content>
+        <div class="appContainer">
+          </div>
+          <div class="appHeader">
+              <ion-icon ios="ios-arrow-round-back" md="md-arrow-round-back" class="backButton"></ion-icon>
+              <ion-icon ios="ios-camera" md="md-camera" class="cameraButton"></ion-icon>
+              <div class="imageHolder">
+                  <img src="../../assets/imgs/default profile.png" alt="user profile picture" class="profileImage">
+                </div>
+            </div>
+            <div class="updateProfileForm">
+                <ion-item style="width:95%;">
+                        <ion-input type="text" placeholder="Name" class="usernameInput"></ion-input>
+                  </ion-item>
+
+                  <ion-item style="width:95%;">
+                    <ion-input type="text" placeholder="Surname" class="usernameInput"></ion-input>
+              </ion-item>
+                
+                  
+              </div>
+                <div class="sleeve">
+                  <h1 style="color:rgb(236, 170, 38)"> ....</h1>
+                  </div>
+                  <div class="addNewPost">
+                    <div class="addIconHolder">
+                        <ion-icon ios="ios-add-circle" md="md-add-circle" class="addNewPostIcon"></ion-icon>
+                      </div>
+                      <div class="addPostText">
+                        <p> Add new post</p>
+                        </div>
+                    </div>
+    </ion-content>

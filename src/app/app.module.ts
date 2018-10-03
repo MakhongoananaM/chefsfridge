@@ -18,6 +18,7 @@ import { VegetarianPage } from '../pages/vegetarian/vegetarian';
 import { VeganPage } from '../pages/vegan/vegan';
 import { MeatloverPage } from '../pages/meatlover/meatlover';
 import { ViewRecipePage } from '../pages/view-recipe/view-recipe';
+import { ResultsPage } from '../pages/results/results';
 
 
 @NgModule({
@@ -34,7 +35,8 @@ import { ViewRecipePage } from '../pages/view-recipe/view-recipe';
     VegetarianPage,
     VeganPage,
     MeatloverPage,
-    ViewRecipePage
+    ViewRecipePage,
+    ResultsPage
   ],
   imports: [
     BrowserModule,HttpClientModule ,
@@ -54,7 +56,8 @@ import { ViewRecipePage } from '../pages/view-recipe/view-recipe';
     VegetarianPage,
     VeganPage,
     MeatloverPage,
-    ViewRecipePage
+    ViewRecipePage,
+    ResultsPage
   ],
   providers: [
     StatusBar,

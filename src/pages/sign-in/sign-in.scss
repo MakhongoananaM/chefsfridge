@@ -1,97 +1,58 @@
-.myHeader{
-    border: dotted 0px black;
-    position: relative;
-    top: 1%;
-    height: 10%;
-    
-}
-
-.mylogoHolder{
-    border: dotted 0px black;
-    position: relative;
-    top: 7%;
-    height: 10%;  
-}
-
-.mySection{
-    border: dotted 0px black;
-    position: relative;
-    top: 35%;
-    height: 40%;
-    
-}
-
-.myFooter{
-    border: dotted 1px black;
-    position: relative;
-    top: 81%;
-    width: 110%;
-    color: cornflowerblue;
-    
-}
-
-.myLogo{
-    width:40%;
-    margin-left: 29%;
-    position: relative;
-    top: 0%;
-}
-
-.myHeaderImage{
-    width:45%;
-    margin-left: 28%;
-}
-
-.mySignInCard{
-    position: relative;  
-    left:-10%;
-    margin-top: -16px;
-}
-
-.mySignInBtn{
-    // width: 100%;
-    // height: 20px;
-   position: relative;
-   display: block;
-   margin: 0 auto;
-   
-}
-
-.forgotPasswordText{
-    font-weight: bold;
-    color:navy;
-    position: relative;
-   
-}
-
-.belowImage{
-    width:12%;
-    margin-left: 38%;
-    position: absolute;
-    margin-top: 1%;
-}
-
-.mySignInButton{
-    background-color:#a1c45a;
-}
-
-.signinHeader{
-    background-color:rgb(236, 170, 38); 
-    color:whitesmoke;
-    border: dotted 0px black;
-    height: 20%;
-    font-size: 1.5em;
-    padding-left: 5%;
-    padding-top: 3%;
-}
-/* @media screen and (max-width:959px){
-    .mySection{
-        width: 100%;
-    } 
-    .myHeader{
-        width: 70%;
+page-sign-in{
+    .appContainer{
+        border: solid 0px black;
+        height: 100%;
     }
-    .myFooter{
-        width: 30%;
+    .logoHolder{
+        border: solid 0px black;
+        position: relative;
+        top: 60px;
     }
-} */
+    .myLogo{
+        width: 40%;
+        position: relative;
+        left: 30%; 
+    }
+    .signInText{
+        border: solid 0px black;
+        position: relative;
+        top: 70px;
+    }
+    .signInText{
+        font-size: 200%;
+        position: relative;
+        left: 4%;
+        color: rgb(98, 133, 134);
+    }
+     .signInTextHolder{
+        position: relative;
+        width: 50%;
+        margin-left: 5%
+    }
+    .signInFormHolder{
+        border: solid 0px black;
+        position: relative;
+        top: 70px;
+        padding: 20px;
+    }
+    
+    .signInButton{
+        position: relative;
+        display: block;
+        margin: 10% auto;
+        background-color:  #a1c45a;
+        border: solid 1px  #a1c45a;
+        width: 97%;
+    }
+
+    .forgotText{
+        color: rgb(98, 133, 134);
+        font-weight: bold;
+    }
+
+    .signUpText{
+        color: rgb(98, 133, 134);
+        font-weight: bold;
+        margin-left: 20%
+    }
+}

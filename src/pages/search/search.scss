@@ -1,36 +1,53 @@
 page-search {
+    h1{
+        color: white;
+        margin-left: 33%;
+        margin-top: 8%;
+        font-size: 2em;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .theBtn{
+        width: 100%;
+    }
+    .heading{
+        text-align: center;
+        font-size: 1.2em;
+        text-transform: uppercase;
+        
+    }
     .btn{
         display: block;
         position: relative;
-        margin: 20% 40% auto;
-        background-color: limegreen; 
+        margin: 5% auto;
+        background-color: #a1c45a;
+        width: 60%;
     }
     .mySearchBar{
         display: block;
-        position: absolute;
-        margin: 8% 0% auto; 
+        position: relative;
+        margin: 8% 0% auto;
         border-color: rgb(0, 225, 255);
         border-style: solid;
-        font-size: 1em;
-    
+        font-size: 2em;
+ 
     }
           .iconHolder{
             border: dotted 0px black;
             position: relative;
             top:1%;
         }
-     
+ 
         .navigationHolder{
             border: solid 2px rgb(236, 170, 38);
             position: relative;
             background-color:white;
             width: 100%;
         }
-     
+ 
         .iconHomePage{
             width: 15%;
         }
-     
+ 
         .myNavicon{
            font-size: 2em;
            padding: 2%;
@@ -39,22 +56,13 @@ page-search {
            opacity: 0.8;
            font-weight: bolder;
         }
-
-        .addbutton {
-            z-index: 2;
-            position: absolute;
-            left: 22%;
-            top: 8%;
-            margin: auto;
-        }
-     
+ 
         .myNavicon:hover{
             color : rgb(236, 170, 38);
         }
-
-        
-     
+ 
         .mys{
+ 
             float: right;
             right: 20%;
             background-color: white;
@@ -62,39 +70,89 @@ page-search {
             top:1%;
             color: #a1c45a;
             font-size: 1.5em;
-            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-            font-weight: 900
         }
-
-        
-
+ 
+        .slideContainer{
+            height: 20%;
+            position: relative;
+            top:1%;
+        }
+ 
+ 
+ 
+ 
         .scrollbar{
+ 
             display: flex;
             flex-flow: row nowrap;
-            height: 20vh;
+            height: 15vh;
             overflow-x: scroll;
+            margin-bottom: 10px;
             image:last-child{
             margin-right: 10px;
-            position: absolute;
-            margin: 0% 0% auto;  
-                  
+            position: relative;
+            margin: 0% 0% auto;
+ 
             }
             .image{
                 flex: 0 0 auto;
                 margin-left: 10px;
                 // border: solid 2px skyblue;
-                // border-radius: 10%;
-                h6{
-                    font-size:0.9em;
-                }
+                border-radius: 10px;
+                border: rgba(238, 238, 238, 0.575) 2px solid;
+                padding: 2px;
+                margin-right: 10px;
+                box-shadow: 2px 1px 8px rgba(rgb(211, 211, 211), 0.9);
+                max-width: auto;
+                width: auto;
+                max-height: auto;
                 img{
-                    width: 60px;
-                    height: 100%;
+                    width: 80px;
+                    height: 60%;
                     border-radius: 10%;
+                    display: block;
+                    overflow: hidden;
+                    margin: 0 auto;
                 }
-
+ 
+                p{
+                    text-align: center;
+                    display: inline-block;
+                    text-transform: uppercase;
+ 
+                }
+ 
+                ion-icon{
+                    background: linear-gradient(rgba(#ecaa26, .8), rgba(255, 173, 173, 0.7));
+                    border-radius: 50%;
+                    font-weight: bold;
+                    padding: 4px;
+                }
             }
-            
         }
-    
+        .iconHolder{
+            border: dotted 0px black;
+            position: relative;
+            top:1%;
+        }
+        .fabb{
+            position: relative;
+            display: block;
+            float: right;
+    }
+      .btnfab{
+            background-color: #f0d3a5;
+         }
+     .header{
+        background-color: rgb(236, 170, 38);
+        height: 15%;
+    }
+   .myContent{
+       position: relative;
+       top: 15px;
+   } 
+   .list{
+    background-color: rgba(128, 0, 128, 0);
+
 }
+ }

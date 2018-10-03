@@ -14,7 +14,7 @@ import { CategoryPage } from '../pages/category/category';
 import { VeganPage } from '../pages/vegan/vegan';
 import { VegetarianPage } from '../pages/vegetarian/vegetarian';
 import { MeatloverPage } from '../pages/meatlover/meatlover';
-
+import {EditProfilePage} from '../pages/edit-profile/edit-profile'
 @Component({
   templateUrl: 'app.html'
 })

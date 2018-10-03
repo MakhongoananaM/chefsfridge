@@ -1,8 +1,128 @@
 page-home {
+    h1{
+        color: white;
+        margin-left: 35%;
+        margin-top: 8%;
+        font-size: 2em;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .fabb{
+        position: relative;
+        // margin-top: 5%;
+        display: block;
+        float: right;
+    }
+    .istardiv{
+        position: relative;
+        margin-left: 50px;
+        color: goldenrod;
+        font-size: 1.8em;
+     }
+    
+    .btnfab{
+        background-color: #f0d3a5;
+     }
+    .header{
+        background-color: rgb(236, 170, 38);
+        height: 15%;
+    }
+
+    .text{
+        position: relative;
+        bottom: 50px;
+    }
+ 
+ .icons{
+        width: 30px;
+        height: 30px;
+ 
+    }
+    .li3{
+        position: relative;
+        top: 40px;
+    }
+
+    .i1{
+        position: relative;
+        top: 80px;
+     }
+
+  
+        .img2{
+        width: 10px;
+        
+        }
+//         .cont{
+//             background: #fceabb; /* Old browsers */
+// background: -moz-linear-gradient(top, #fceabb 0%, #f8b500 0%, #f8b500 0%, #f8b500 17%, #f8b500 38%, #fccd4d 72%, #fbdf93 100%); /* FF3.6-15 */
+// background: -webkit-linear-gradient(top, #fceabb 0%,#f8b500 0%,#f8b500 0%,#f8b500 17%,#f8b500 38%,#fccd4d 72%,#fbdf93 100%); /* Chrome10-25,Safari5.1-6 */
+// background: linear-gradient(to bottom, #fceabb 0%,#f8b500 0%,#f8b500 0%,#f8b500 17%,#f8b500 38%,#fccd4d 72%,#fbdf93 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+// filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fceabb', endColorstr='#fbdf93',GradientType=0 ); /* IE6-9 */
+//         }
+        .card{
+           border-radius: 5%;
+           width: auto;
+           height: 150px;
+           position: relative;
+           margin: 1% 4% auto;
+           left: 4%;
+           background-color: aqua;
+        }
+        .img{
+           height:80px;
+           box-shadow: 0 0 15px grey;
+           width:100%;
+           border-radius: 35%
+           
+        }
+        .image{
+           position: absolute;
+           margin-left: -50px;
+           padding-top: 25%;
+           transform: translatey(-50%);
+           max-width: 90px;
+    
+           
+        }
+        .plate{
+           padding: 5px;
+           background: white;
+           box-shadow: 0 0 5px grey;
+           border-radius: 30px;
+           margin-bottom: -5px;
+        }
+        .container{
+           height: auto;
+           width: 300px;
+           float: right;
+           background: white;
+           box-shadow: 0 2px 5px rgb(236, 170, 38);
+           padding: 10px;
+           border-radius: 15px;
+           margin-bottom: 10px;
+           display: list-item;
+           min-height: 120px;
+        }
+        p{
+           padding-left: 50px;
+        }
+        .dishname{
+            font-size: 1.2em;
+            font: outline;
+        }
+        .desc{
+            font-size: 1em;
+            font: outline;
+            left: 10%;
+        }
+        .icons{
+            width: 30px;
+            height: 20px;
+
+        }
     .iconHolder{
         border: dotted 0px black;
         position: relative;
-        top:1%;
     }
     
     .navigationHolder{
@@ -16,17 +136,20 @@ page-home {
         width: 15%;
     }
     
-    .myNavicon{
-       font-size: 2em;
-       padding: 2%;
-       margin-left: 11%;
-       color: cadetblue;
-       opacity: 0.8;
-       font-weight: bolder;
-    }
+    // .myNavicon{
+    //    font-size: 2em;
+    //    padding: 2%;
+    //    margin-left: 11%;
+    //    color: cadetblue;
+    // //    opacity: 0.8;
+    //    font-weight: bolder;
+    // //    background-color: purple;
+    //    border-radius: 0%;
+    // }
     
     .myNavicon:hover{
         color : rgb(236, 170, 38);
+       
     }
     
     .mySearchBar{
@@ -37,4 +160,14 @@ page-home {
         top:1%;
     }
 
+
+    .list{
+        background-color: rgba(128, 0, 128, 0);
+
+    }
+
+    .icons{
+        font-size: 2em;
+    }
+    
 }

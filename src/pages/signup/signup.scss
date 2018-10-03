@@ -1,91 +1,54 @@
-.myHeader{
-    border: dotted 0px black;
-    position: relative;
-    top: 0%;
-    height: 10%;
-    
-}
-
-.mylogoHolder{
-    border: dotted 0px black;
-    position: relative;
-    top: 5%;
-    height: 10%;  
-}
-
-.mySection1{
-    border: dotted 0px black;
-    position: relative;
-    top: 30%;
-    
-}
-
-.myFooter{
-    border: dotted 0px black;
-    position: absolute;
-    top: 86%;
-    width: 100%;
-    color: cornflowerblue;
-    height: 0%;
-}
-
-.myLogo1{
-    width:20%;
-    position: absolute;
-    top: 0%;
-}
-
-.myHeaderImage{
-    width:45%;
-    margin-left: 28%;
-}
-
-.mySignInCard{
-    position: relative;
-    margin-top:10px;    
-    width: 125%;
-}
-
-.mySignInBtn{
-    width: 60%;
-    height: 20px;
-    position: relative;
-    top: 0%;
-}
-
-.forgotPasswordText{
-    font-weight: bold;
-    color:navy;
-    position: relative;
-   
-}
-
-.belowImage1{
-    width:12%;
-    margin-left: 41%;
-    position: absolute;
-    margin-top: 7%;
-    
-}
-
-.mySignInButton{
-    background-color:#a1c45a;
-}
-
-.copyRightText{
-    margin-left: 32%;
-    font-weight:bold; 
-    color: rgb(236, 170, 38); 
-    position: relative;
-    top: 8%;
-}
-
-.signinHeader1{
-    background-color:rgb(236, 170, 38); 
-    color:whitesmoke;
-    border: dotted 0px black;
-    height: 25%;
-    font-size: 1.5em;
-    padding: 3%;
-    
+page-signup{
+    .appContainer{
+        border: solid 0px black;
+        position: relative;
+        top: 2%;   
+    }
+    .myHeader{
+        border: solid 0px black;
+        position: relative;
+        top: 29px;
+    }
+    .myLogo{
+        width: 30%;
+        position: relative;
+    }
+    .signInText1{
+        float: right;
+        font-size: 1em;
+        position: relative;
+        right: 0%;
+        top: 28px;
+        border-radius: 20px;
+        border: solid 1px rgb(236, 170, 38);
+        color: rgb(98, 133, 134);
+    }
+    .createAccountText{
+        border: solid 0px black;
+        position: relative;
+        top: 50px;
+        font-size: 1.6em;
+        color: rgb(98, 133, 134);
+    }
+    .signUpformHolder{
+        border: solid 0px black;
+        position: relative;
+        top: 70px;
+    }
+    .signUpButton{
+        position: relative;
+        display: block;
+        margin: 10% auto;
+        background-color:  #a1c45a;
+        border: solid 1px  #a1c45a;
+        width: 97%;
+    }
+    .agreementText{
+        color: rgb(98, 133, 134); 
+        font-size: 0.8em;
+        text-align: center;
+        position: relative;
+        top: 50px; 
+        font-weight: bold;
+    }
 }

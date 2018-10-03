@@ -43,7 +43,11 @@ export class ChefsFridgeProvider {
         });
         loader.present();
        }, (error)=>{
-      reject(error)
+        const toast = this.toastCtrl.create({
+          message: error,
+          duration: 3000
+        });
+        toast.present();
       })
     })
 
@@ -54,9 +58,9 @@ export class ChefsFridgeProvider {
       //Create a user account with the email and password
       firebase.auth().createUserWithEmailAndPassword(email, password).then(()=>{
         //add the default image for the user profile
-        firebase.storage().ref().child('default profile.png').getDownloadURL().then((url)=>{
-          this.url = url;
-        })
+        // firebase.storage().ref().child('default profile.png').getDownloadURL().then((url)=>{
+        //   this.url = url;
+        // });
         //signing the user in
         firebase.auth().signInWithEmailAndPassword(email , password).then(()=>{
           var uid = firebase.auth().currentUser.uid;
@@ -64,9 +68,8 @@ export class ChefsFridgeProvider {
           firebase.database().ref('users/'+uid).set({
             name: name,
             surname: surname,
-            email:email,
-            image: this.url
-          })
+            email:email
+          });
           const toast = this.toastCtrl.create({
             message: "Account Created",
             duration: 3000
@@ -201,7 +204,6 @@ export class ChefsFridgeProvider {
   }
 
   itemSearch(category, sub_category, items:any){
-
     var  commonRecipes = [];
     var ingredients = [];
     var temp = [];
@@ -218,13 +220,11 @@ export class ChefsFridgeProvider {
           var k = keys[i];
           // console.log(k);
           if(recipes[k].category == category && recipes[k].sub_category == sub_category){
-
             var name = recipes[k].name;
             var description = recipes[k].description
             var ingredients = recipes[k].ingredients
             var methods = recipes[k].directions
             var image = recipes[k].image 
-
             let obj = {
               key: k,
               name: name,
@@ -233,30 +233,25 @@ export class ChefsFridgeProvider {
               methods: methods,
               image: image,
             }
-  
             commonRecipes.push(obj);
-            // console.log(commonRecipes);
+            console.log(commonRecipes);
           }
         }
       });
 
       console.log("new recipe");
-      
      console.log(commonRecipes);
 
      for (let i = 0; i < commonRecipes.length; i++){
       ingredients = commonRecipes[i].ingredients;
-
       console.log(ingredients);
       count = 0;
-
       console.log("Refreash "+count);
       for (let b = 0; b < ingredients.length; b++) {
         const element = ingredients[b];
         console.log(element);
         temp = element.split(",");
         console.log(temp);
-
         for (let c = 0; c < temp.length; c++) {
          temp2 = temp[c].split(" ");
          console.log(temp2);
@@ -270,11 +265,8 @@ export class ChefsFridgeProvider {
                 console.log("New search");
                 searchedrecipe.push(commonRecipes[i]);
                 console.log(searchedrecipe);
-                
               }
-
             }
-            
            }   
           }        
         }
@@ -285,7 +277,6 @@ export class ChefsFridgeProvider {
   }
 //update
   updateProfile(name, surname){
-
     var database = firebase.database();
     var userid = firebase.auth().currentUser.uid;
     if(name != "" && surname != ""){
@@ -295,7 +286,6 @@ export class ChefsFridgeProvider {
         surname: surname
       }
       return firebase.database().ref('users/' + userid).update(update);
-   
     } else if (name != "") {
       var updates = {
         name: name,
@@ -304,7 +294,6 @@ export class ChefsFridgeProvider {
    
     } else if (surname != "") {
       var updatess = {
-   
         surname: surname
       }
       return firebase.database().ref('users/' + userid).update(updatess);
@@ -446,19 +435,13 @@ export class ChefsFridgeProvider {
           arr.push(recep[key])
           pass(arr)
         }
-        
       } 
-    
-   
     })
   })
   }
 
-
-  
   getSearch2(){
     var arr = [];
-   
   return new Promise ((pass,fail) =>{
     firebase.database().ref('recipes/').on('value',(data)=>{
       var recep =  data.val();
@@ -467,11 +450,7 @@ export class ChefsFridgeProvider {
         var key = keys[x];
           arr.push(recep[key])
           pass(arr)
-        
-        
       } 
-    
-   
     })
   })
   }

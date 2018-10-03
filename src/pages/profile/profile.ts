@@ -22,22 +22,25 @@ export class ProfilePage {
   propic: any;
 
   constructor(public navCtrl: NavController, public navParams: NavParams, private chefsFridge: ChefsFridgeProvider) {
+    
+  }
+
+  ionViewDidLoad() {
+    console.log('ionViewDidLoad ProfilePage');
+  }
+
+  ionViewDidEnter(){
     this.chefsFridge.retrieveUser().then((data:any)=>{
 
       //console.log(data);
       this.name = data.name;
       this.surname = data.surname;
       this.email = data.email;
-      this.propic = data.image;
       
     } , (error)=>{
      
       
     })
-  }
-
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad ProfilePage');
   }
 
   updateProfile(){

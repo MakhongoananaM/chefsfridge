@@ -1,26 +1,39 @@
-<!--
-  Generated template for the ViewRecipePage page.
-
-  See http://ionicframework.com/docs/components/#navigation for more info on
-  Ionic pages and navigation.
--->
-<ion-header>
-
-  <ion-navbar>
-    <ion-title>viewRecipe</ion-title>
-  </ion-navbar>
-
-</ion-header>
+<!-- <ion-header class="head">
+       <ion-fab right bottom>
+           <button ion-fab color="light" class="btnfab"><ion-icon name="more"></ion-icon></button>
+           <ion-fab-list side="left">
+             <button ion-fab><ion-icon ios="ios-search" md="md-search"  (click)="userLogOut()"></ion-icon></button>
+             <button ion-fab><ion-icon ios="ios-contact" md="md-contact"  (click)="profile()"></ion-icon></button>
+             <button ion-fab><ion-icon ios="ios-basket" md="md-basket"  (click)="Category()"></ion-icon></button>
+             <button ion-fab><ion-icon ios="ios-home" md="md-home" ></ion-icon></button>
+           </ion-fab-list>
+         </ion-fab>
+   </ion-header>     -->
 
 
-<ion-content padding>
-{{recipe.name}}
-<img src="{{recipe.image}}" alt="">
-<ion-list *ngFor="let a of recipe.ingredients">
-  {{a}}
-</ion-list>
+   <ion-content nopadding class="mainContent">
 
-<ion-list *ngFor="let b of recipe.directions">
-    {{b}}
-  </ion-list>
-</ion-content>
+    <div class="cont">
+   
+    <div class="dishImage">
+        <div class="plate">
+    <img src="{{recipe.image}}" class="imgrecipe">
+    </div>
+    </div>
+    <div class="container">
+    <div class="dishName">
+      {{recipe.name}}
+        </div>
+    <div class="dishContent">
+    <h4 class="ingrdientsTitle">Ingridients</h4>
+    <p *ngFor="let a of recipe.ingredients" class="text">
+        &#10022; {{a}}
+    </p>
+    <h4 class="ingrdientsTitle">Instructions</h4>
+    <p *ngFor="let b of recipe.directions" class="text">
+      &#10022;  {{b}}
+    </p>
+   </div>
+    </div>
+   </div>
+    </ion-content>

@@ -1,10 +1,10 @@
-<ion-header class="ionicHeader">
+<!-- <ion-header class="ionicHeader">
     <div class="iconHolder">
    
       <ion-icon ios="ios-arrow-back" md="md-arrow-back" class="backIcon" (click)="back()"></ion-icon>
       <ion-icon ios="ios-create" md="md-create" class="createIcon" (click)="edit()"></ion-icon>
       </div>
-          <img src="{{propic}}"  height ="105%"alt="Italian Trulli" class="profileImage">
+          <img src="../../assets/imgs/default profile.png"  height ="105%"alt="Italian Trulli" class="profileImage">
           <p class="userName"> {{name}} {{surname}}<p>
             <p class="userEmail">{{email}}<p>
                
@@ -89,7 +89,7 @@
           
           </ion-card>
    </ion-content>
-<!-- <ion-header>
+ <ion-header>
     <div class="iconHolder">
       <img src="../../assets/imgs/signUplogo.PNG" class="iconHomePage">
       <ion-searchbar (ionInput)="getItems($event)" class="mySearchBar"></ion-searchbar>
@@ -123,3 +123,31 @@
         
       <button ion-button (click)="updateProfile()">Retrieve</button> 
 </ion-content> -->
+<ion-content>
+  <div class="appContainer">
+    </div>
+    <div class="appHeader">
+        <ion-icon ios="ios-arrow-round-back" md="md-arrow-round-back" class="backButton"></ion-icon>
+        <ion-icon ios="ios-create" md="md-create" class="editButton" (click)="edit()"></ion-icon>
+        
+        <div class="imageHolder">
+            <img src="../../assets/imgs/default profile.png" alt="user profile picture" class="profileImage">
+          </div>
+      </div>
+      <div class="usernameHolder">
+        <p class="usernameText">{{name}} {{surname}}</p>
+        </div>
+        <div class="bioHolder">
+            <p class="bioText"> {{email}}</p>
+          </div>
+          <div class="sleeve">
+            </div>
+            <div class="addNewPost">
+              <div class="addIconHolder">
+                  <ion-icon ios="ios-add-circle" md="md-add-circle" class="addNewPostIcon"></ion-icon>
+                </div>
+                <div class="addPostText">
+                  <p> Add new post</p>
+                  </div>
+              </div>
+</ion-content>

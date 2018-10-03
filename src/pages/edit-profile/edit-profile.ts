@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { ChefsFridgeProvider } from '../../providers/chefs-fridge/chefs-fridge';
+import { ProfilePage } from '../profile/profile';
 /**
  * Generated class for the EditProfilePage page.
  *
@@ -27,6 +28,11 @@ export class EditProfilePage {
 
   editUser(){
     this.chefsFridge.updateProfile(this.name, this.surname);
+    this.navCtrl.push(ProfilePage)
+  }
+
+  goBack(){
+    this.navCtrl.pop();
   }
 
 }

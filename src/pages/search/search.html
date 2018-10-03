@@ -1,160 +1,250 @@
-<ion-header>
-  <div class="iconHolder">
-    <img src="../../assets/imgs/signUplogo.PNG" class="iconHomePage">
- 
-    <!-- <ion-searchbar (ionInput)="getItems($event)" class="mySearchBar"></ion-searchbar>
-  --><ion-label class="mys">ADD INGREDIENTS</ion-label>
-    </div>
- 
-      <div class="navigationHolder">
-          <ion-icon ios="ios-refresh" md="md-refresh" class="myNavicon"></ion-icon>
-          <ion-icon ios="ios-basket" md="md-basket" class="myNavicon"></ion-icon>
-          <ion-icon ios="ios-contact" md="md-contact" class="myNavicon" (click)="profile()"></ion-icon>
-          <ion-icon ios="ios-power" md="md-power" class="myNavicon" (click)="userLogOut()"></ion-icon>
-        </div>
- 
- </ion-header>
-
-
-<ion-content class="myContent">
-    <h3>Meat</h3>
-  <div class="scrollbar">
+<ion-header class="header">
+        <div class="iconHolder">
       
-    <div class="image">
-        <img src="../../assets/icon/icons/icons8-thanksgiving-turkey-64.png" alt="" width="50%" height="50%">
-        <h6>Turkey</h6>
-    </div>
-    <div class="image">
-        <img src="../../assets/icon/meat-icon/Ribs.jpg" alt="" width="50%" height="50%">
-        <h6>Ribs</h6>
-    </div>
-    <div class="image">
-        <img src="../../assets/icon/icons/icons8-steak-64.png" alt="" width="50%" height="50%">
-        <h6>Steak</h6>
-    </div>
-    <div class="image">
-        <img src="../../assets/icon/meat-icon/chicken.jpg" alt="" width="50%" height="50%">
-        <h6>Chicken</h6>
-    </div>
-    <div class="image">
-        <img src="../../assets/icon/icons/icons8-salmon-64.png" alt="" width="50%" height="50%">
-        <h6>Salmon</h6>
-    </div>
-    <div class="image">
-        <img src="../../assets/icon/icons/icons8-salami-64.png" alt="" width="50%" height="50%">
-        <h6>Salami</h6>
-    </div>
-    <div class="image">
-        <img src="../../assets/icon/icons/icons8-meat-64.png" alt="" width="50%" height="50%">
-        <h6>Pork</h6>
-    </div>
-    <div class="image">
-        <img src="../../assets/icon/icons/icons8-gammon-64 - Copy.png" alt="" width="50%" height="50%">
-        <h6>gammon</h6>
-    </div>
-    <div class="image">
-            <img src="../../assets/icon/icons/icons8-beef-64 - Copy.png" alt="" width="50%" height="50%">
-            <h6>Beef</h6>
-    </div>
-    <div class="image">
-        <img src="../../assets/icon/icons/icons8-barbecue-sausage-64 - Copy.png" alt="" width="50%" height="50%">
-        <h6>Sausage</h6>
-    </div>    
-    <div class="image">
-            <img src="../../assets/icon/icons/icons8-bacon-64 - Copy.png" alt="" width="50%" height="50%">
-            <h6>Bacon</h6>
-        </div>
-  </div>
-  <h3>Vegetables</h3>
-  <div class="scrollbar">
-        <div class="image">
-            <img src="../../assets/icon/Vegi-Icon/broccoly.jpg" alt="" width="20%" height="20%">
-        </div>
-        <div class="image">
-            <img src="../../assets/icon/Vegi-Icon/carrot.png" alt="" width="50%" height="50%">
-        </div>
-        <div class="image">
-            <img src="../../assets/icon/Vegi-Icon/chillies.png" alt="" >
-        </div>
-        <div class="image">
-            <img src="../../assets/icon/Vegi-Icon/colliflower.jpg" alt="" width="50%" height="50%">
-        </div>
-        <div class="image">
-            <img src="../../assets/icon/Vegi-Icon/eggplant.png" alt="" width="50%" height="50%">
-        </div>
-        <div class="image">
-            <img src="../../assets/icon/Vegi-Icon/garllic.jpg" alt="" width="50%" height="50%">
-        </div>
-        <div class="image">
-            <img src="../../assets/icon/Vegi-Icon/greenpepper.png" alt="" width="50%" height="50%">
-        </div>
-        <div class="image">
-            <img src="../../assets/icon/Vegi-Icon/onion.jpg" alt="" width="50%" height="50%">
-        </div>
-        <div class="image">
-            <img src="../../assets/icon/Vegi-Icon/pumkin.png" alt="" width="50%" height="50%">
-        </div>
-      </div>
-<h3>Fruits</h3>
-      <div class="scrollbar">
+            <ion-fab right  class="fabb">
+                <button ion-fab color="light" class="btnfab"><ion-icon name="more"></ion-icon></button>
+                <ion-fab-list  side="left">
+                  <button class="list" ion-fab clear><ion-icon ios="ios-search" md="md-search" (click)="userLogOut()"></ion-icon></button>
+                  <button class="list" ion-fab><ion-icon ios="ios-contact" md="md-contact"  (click)="profile()"></ion-icon></button>
+                  <button class="list" ion-fab><ion-icon ios="ios-basket" md="md-basket"  (click)="Category()"></ion-icon></button>
+                  <button class="list" ion-fab><ion-icon ios="ios-home" md="md-home" ></ion-icon></button>
+                  
+                </ion-fab-list>
+            </ion-fab>
+       <h1>Add Items</h1>
+      
+          <!-- <ion-searchbar (ionInput)="getItems($event)" class="mySearchBar"></ion-searchbar> -->
+          
+          </div>
+     <!--
+           <div class="navigationHolder">
+               <ion-icon ios="ios-home" md="md-home" class="myNavicon"></ion-icon>
+               <ion-icon ios="ios-basket" md="md-basket" class="myNavicon" (click)="Category()"></ion-icon>
+               <ion-icon ios="ios-contact" md="md-contact" class="myNavicon" (click)="profile()"></ion-icon>
+               <ion-icon ios="ios-power" md="md-power" class="myNavicon" (click)="userLogOut()"></ion-icon>
+             </div> -->
+       
+     </ion-header>
+    
+    
+    <ion-content class="myContent">
+        <p class="heading">Meat</p>
+    
+        <div class="scrollbar">
+    
+            <div class="image"> 
+                <img src="../../assets/icon/meat-icon/chicken.jpg" alt="" width="50%" height="50%">
+    
+              <ion-grid>
+                  <ion-row>
+                      <ion-col>Chicken</ion-col>
+                      <ion-col align="right"><ion-icon name="add" (click)="addItem('chicken')"></ion-icon></ion-col>
+                  </ion-row>
+              </ion-grid>
+    
+    
+    
+            </div>
             <div class="image">
-                <img src="../../assets/icon/Fruit-icon/apple.png" alt="" width="20%" height="20%">
+                <img src="../../assets/icon/meat-icon/Ribs.jpg" alt="" width="50%" height="50%">
+                <p>BeefRibs</p>
+                <ion-icon name="add" (click)="addItem('rib')"></ion-icon>
+            </div>
+            <div class="image">
+                <img src="../../assets/icon/meat-icon/steak.png" alt="" width="50%" height="50%">
+                <p>BeefSteak</p>
+                <ion-icon name="add" (click)="addItem('steak')"></ion-icon>
+            </div>
+            <div class="image">
+                <img src="../../assets/icon/meat-icon/chicken paws.jpg" alt="" width="50%" height="50%">
+                <p>Chicken Paws</p>
+                <ion-icon name="add" (click)="addItem('paws')"></ion-icon>
+            </div>
+            <div class="image">
+                <img src="../../assets/icon/meat-icon/beef burger.jpg" alt="" width="50%" height="50%">
+                <p>BeefBurger</p>
+                <ion-icon name="add" (click)="addItem('beef')"></ion-icon>
+            </div>
+            <div class="image">
+                <img src="../../assets/icon/meat-icon/fish.jpg" alt="" width="50%" height="50%">
+                <p>Fish</p>
+                <ion-icon name="add" (click)="addItem('fish')"></ion-icon>
+            </div>
+            <div class="image">
+                <img src="../../assets/icon/meat-icon/french palony.jpg" alt="" width="50%" height="50%">
+                <p>Palony</p>
+                <ion-icon name="add" (click)="addItem('french')"></ion-icon>
+            </div>
+            <div class="image">
+                <img src="../../assets/icon/meat-icon/ham.jpg" alt="" width="50%" height="50%">
+                <p>Ham</p>
+                <ion-icon name="add" (click)="addItem('ham')"></ion-icon>
+            </div>
+            <div class="image">
+                <img src="../../assets/icon/meat-icon/oxtail.jpg" alt="" width="50%" height="50%">
+                <p>Oxtail</p>
+                <ion-icon name="add" (click)="addItem('oxtail')"></ion-icon>
+            </div>
+            <div class="image">
+                <img src="../../assets/icon/meat-icon/palony.jpg" alt="" width="50%" height="50%">
+                <p>Palony</p>
+                <ion-icon name="add" (click)="addItem('palony')"></ion-icon>
+            </div>
+    
+            <div class="image">
+                <img src="../../assets/icon/meat-icon/tbone.jpg" alt="" width="50%" height="50%">
+                <p>T-bone</p>
+                <ion-icon name="add" (click)="addItem('tbone')"></ion-icon>
+            </div>
+            <div class="image">
+                <img src="../../assets/icon/meat-icon/meance meat.jpg" alt="" width="50%" height="50%">
+                <p>MeanceMeat</p>
+                <ion-icon name="add" (click)="addItem('meance')"></ion-icon>
+            </div>
+        </div>
+        <p class="heading">vegetables</p>
+        <div class="scrollbar">
+            <div class="image">
+                <img src="../../assets/icon/Vegi-Icon/broccoly.jpg" alt="" width="50%" height="50%">
+                <p>Brocolli</p>
+                <ion-icon name="add" (click)="addItem('brocolli')"></ion-icon>
+            </div>
+            <div class="image">
+                <img src="../../assets/icon/Vegi-Icon/carrot.png" alt="" width="50%" height="50%">
+                <p>Carrot</p>
+                <ion-icon name="add" (click)="addItem('carrot')"></ion-icon>
+            </div>
+            <div class="image">
+                <img src="../../assets/icon/Vegi-Icon/chillies.png" alt="" width="50%" height="50%">
+                <p>Chillies</p>
+                <ion-icon name="add" (click)="addItem('chillies')"></ion-icon>
+            </div>
+            <div class="image">
+                <img src="../../assets/icon/Vegi-Icon/colliflower.jpg" alt="" width="50%" height="50%">
+                <p>Colliflower</p>
+                <ion-icon name="add" (click)="addItem('colliflower')"></ion-icon>
+            </div>
+            <div class="image">
+                <img src="../../assets/icon/Vegi-Icon/eggplant.png" alt="" width="50%" height="50%">
+                <p>Eggplant</p>
+                <ion-icon name="add" (click)="addItem('eggplant')"></ion-icon>
+            </div>
+            <div class="image">
+                <img src="../../assets/icon/Vegi-Icon/garllic.jpg" alt="" width="50%" height="50%">
+                <p>Garlic</p>
+                <ion-icon name="add" (click)="addItem('garlic')"></ion-icon>
+            </div>
+            <div class="image">
+                <img src="../../assets/icon/Vegi-Icon/greenpepper.png" alt="" width="50%" height="50%">
+                <p>greenpepper</p>
+                <ion-icon name="add" (click)="addItem('greenpepper')"></ion-icon>
+            </div>
+            <div class="image">
+                <img src="../../assets/icon/Vegi-Icon/onion.jpg" alt="" width="50%" height="50%">
+                <p>Onion</p>
+                <ion-icon name="add" (click)="addItem('onion')"></ion-icon>
+            </div>
+            <div class="image">
+                <img src="../../assets/icon/Vegi-Icon/onions.jpg" alt="" width="50%" height="50%">
+                <p>Onions</p>
+                <ion-icon name="add" (click)="addItem('onions')"></ion-icon>
+            </div>
+            <div class="image">
+                <img src="../../assets/icon/Vegi-Icon/pumkin.png" alt="" width="50%" height="50%">
+                <p>Pumpkin</p>
+                <ion-icon name="add" (click)="addItem('pumkin')"></ion-icon>
+            </div>
+        </div>
+        <p class="heading">Fruits</p>
+        <div class="scrollbar">
+            <div class="image">
+                <img src="../../assets/icon/Fruit-icon/green-apple-white-background-15028657.jpg" alt="" width="50%" height="50%">
+                <p>Apple</p>
+                <ion-icon name="add" (click)="addItem('apple')"></ion-icon>
             </div>
             <div class="image">
                 <img src="../../assets/icon/Fruit-icon/avocado.png" alt="" width="50%" height="50%">
+                <p>Avocado</p>
+                <ion-icon name="add" (click)="addItem('avocado')"></ion-icon>
             </div>
             <div class="image">
-                <img src="../../assets/icon/Fruit-icon/banana.png" alt="" >
+                <img src="../../assets/icon/Fruit-icon/banana.png" alt="" width="50%" height="50%">
+                <p>Banana</p>
+                <ion-icon name="add" (click)="addItem('banana')"></ion-icon>
             </div>
             <div class="image">
                 <img src="../../assets/icon/Fruit-icon/blueberries.png" alt="" width="50%" height="50%">
+                <p>Blueberries</p>
+                <ion-icon name="add" (click)="addItem('blueberries')"></ion-icon>
             </div>
             <div class="image">
                 <img src="../../assets/icon/Fruit-icon/cherries.png" alt="" width="50%" height="50%">
+                <p>Cherries</p>
+                <ion-icon name="add" (click)="addItem('cherries')"></ion-icon>
             </div>
             <div class="image">
                 <img src="../../assets/icon/Fruit-icon/grapes.png" alt="" width="50%" height="50%">
+                <p>Grapes</p>
+                <ion-icon name="add" (click)="addItem('grapes')"></ion-icon>
+            </div>
+            <div class="image">
+                <img src="../../assets/icon/Fruit-icon/images.jpg" alt="" width="50%" height="50%">
+                <p>Pea</p>
+                <ion-icon name="add" (click)="addItem('pea')"></ion-icon>
             </div>
             <div class="image">
                 <img src="../../assets/icon/Fruit-icon/lemon.png" alt="" width="50%" height="50%">
+                <p>Lemon</p>
+                <ion-icon name="add" (click)="addItem('lemon')"></ion-icon>
             </div>
             <div class="image">
                 <img src="../../assets/icon/Fruit-icon/mango.jpg" alt="" width="50%" height="50%">
+                <p>Mango</p>
+                <ion-icon name="add" (click)="addItem('mango')"></ion-icon>
             </div>
             <div class="image">
-                <button class="button profilebutton icon ion-camera" ng-click="upload()"></button>
                 <img src="../../assets/icon/Fruit-icon/orange.png" alt="" width="50%" height="50%">
+                <p>Orange</p>
+                <ion-icon name="add" (click)="addItem('orange')"></ion-icon>
             </div>
-          </div>
-<button ion-button class="btn">Submit</button>
-<ion-content padding>
-  
-  <ion-label>Category</ion-label>
-  <ion-item>
-    <ion-select [(ngModel)]="category">
-      <ion-option value="Vegan">Vegan</ion-option>
-      <ion-option value="Vegeterian">Vegeterian</ion-option>
-      <ion-option value="Meat Lover">Meat Lover</ion-option>
-    </ion-select>
-  </ion-item>
-
-  <ion-label>Sub-Category</ion-label>
-  <ion-item>
-    <ion-select [(ngModel)]="sub_category">
-      <ion-option value="Breakfast">Breakfast</ion-option>
-      <ion-option value="Lunch">Lunch</ion-option>
-      <ion-option value="Dinner">Dinner</ion-option>
-      <ion-option value="Dessert">Dessert</ion-option>
-    </ion-select>
-  </ion-item>
-
-<ion-input type="text" [(ngModel)]="item"></ion-input>
-<button ion-button (click)="addItem()">Add Item</button>
-<button ion-button (click)="search()">Search</button>
-
-<ion-list *ngFor="let a of searchedrecipe">
-    {{a.name}}<br>
-    {{a.description}}<br>
-    <img src="{{a.image}}" alt="">
-</ion-list>
-</ion-content>
+            <div class="image">
+                <img src="../../assets/icon/Fruit-icon/pineapple.png" alt="" width="50%" height="50%">
+                <p>Pineapple</p>
+                <ion-icon name="add" (click)="addItem('pineapple')"></ion-icon>
+            </div>
+        </div>
+    
+    
+        <button ion-button round class="btn" (click)="search()">Search</button>
+        <!-- 
+    <ion-content padding>
+      
+      <ion-label>Category</ion-label>
+      <ion-item>
+        <ion-select [(ngModel)]="category">
+          <ion-option value="Vegan">Vegan</ion-option>
+          <ion-option value="Vegeterian">Vegeterian</ion-option>
+          <ion-option value="Meat Lover">Meat Lover</ion-option>
+        </ion-select>
+      </ion-item>
+    
+      <ion-label>Sub-Category</ion-label>
+      <ion-item>
+        <ion-select [(ngModel)]="sub_category">
+          <ion-option value="Breakfast">Breakfast</ion-option>
+          <ion-option value="Lunch">Lunch</ion-option>
+          <ion-option value="Dinner">Dinner</ion-option>
+          <ion-option value="Dessert">Dessert</ion-option>
+        </ion-select>
+      </ion-item>
+    
+    <ion-input type="text" [(ngModel)]="item"></ion-input>
+    <button ion-button (click)="addItem()">Add Item</button>
+    <button ion-button (click)="search()">Search</button>
+    
+    <ion-list *ngFor="let a of finalRecipe">
+        {{a.name}}<br>
+        {{a.description}}<br>
+        <img src="{{a.image}}" alt="">
+    </ion-list> -->
+    </ion-content> 

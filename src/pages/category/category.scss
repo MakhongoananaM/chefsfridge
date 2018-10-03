@@ -1,4 +1,21 @@
 page-category {
+    h1{
+        color: white;
+        margin-left: 30%;
+        margin-top: 8%;
+        font-size: 2em;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .fabb{
+        position: relative;
+        // margin-top: 5%;
+        display: block;
+        float: right;
+    }
+
+    .btnfab{
+        background-color: #f0d3a5;
+     }
     .card-background-page {
 
         ion-card {
@@ -79,4 +96,12 @@ page-category {
         filter: brightness(55%);
 }
 
+.header{
+    background-color: rgb(236, 170, 38);
+    height: 15%;
+}
+.list{
+    background-color: rgba(128, 0, 128, 0);
+
+}
 }

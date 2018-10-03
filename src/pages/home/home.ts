@@ -18,6 +18,8 @@ export class HomePage {
   items=[]; 
   dishes=[]
   val;
+  showme:boolean;
+
   constructor(public navCtrl: NavController, private chefsFridge: ChefsFridgeProvider) {
    this.chefsFridge.retreiveRecipe().then((data:any)=>{
 
@@ -92,5 +94,14 @@ export class HomePage {
 
   view(key){
     this.navCtrl.push(ViewRecipePage, {key:key});
+  }
+
+  open(i){
+    if(i == i){
+      this.showme = true;
+    }
+    else{
+      
+    }
   }
 }

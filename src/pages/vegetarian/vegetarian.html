@@ -1,42 +1,46 @@
-<ion-header>
-  <div class="iconHolder">
-    <img src="../../assets/imgs/signUplogo.PNG" class="iconHomePage">
- 
-    <!-- <ion-searchbar (ionInput)="getItems($event)" class="mySearchBar"></ion-searchbar>
-  --><ion-label class="mys">VEGETARIAN</ion-label>
-    </div>
- 
-      <div class="navigationHolder">
-          <ion-icon ios="ios-refresh" md="md-refresh" class="myNavicon"></ion-icon>
-          <ion-icon ios="ios-basket" md="md-basket" class="myNavicon"></ion-icon>
-          <ion-icon ios="ios-contact" md="md-contact" class="myNavicon" (click)="profile()"></ion-icon>
-          <ion-icon ios="ios-power" md="md-power" class="myNavicon" (click)="userLogOut()"></ion-icon>
-        </div>
- 
- </ion-header>
-
-<ion-content class="card-background-page">
-
-  <ion-card (click)="srcc()">
-    <img src="../../assets/imgs/Vege/boiled-egg-avocado-tartine.jpg" alt="" class="imgs">
-    <div class="card-title">Breakfast</div>
-    <!-- <div class="card-subtitle">41 Listings</div> -->
-  </ion-card>
-
-  <ion-card (click)="srcc()">
-    <img src="../../assets/imgs/Vege/Healthy-BLISSED-OUT-Thai-Salad-with-Marinated-Peanut-Tempeh-Healthy-quick-PROTEIN-PACKED-vegan-glutenfree-tempeh-salad-asian-recipe_dinner.jpg" alt=""class="imgs" >
-    <div class="card-title">Lunch</div>
-    <!-- <div class="card-subtitle">64 Listings</div> -->
-  </ion-card>
-
-  <ion-card (click)="srcc()">
-    <img src="../../assets/imgs/Vege/15.Crustless-Spinach-Cheese-Pie_dinner.jpg" alt="" class="imgs">
-    <div class="card-title">Dinner</div>
-    <!-- <div class="card-subtitle">72 Listings</div> -->
-  </ion-card>
-  <ion-card (click)="srcc()">
-    <img src="../../assets/imgs/Vege/pancakes_breakfast.jpg" alt="" class="imgs">
-    <div class="card-title">Desert</div>
-    <!-- <div class="card-subtitle">72 Listings</div> -->
-  </ion-card>
-</ion-content>
+<ion-header class="header">
+    <div class="iconHolder">
+  
+        <ion-fab right  class="fabb">
+            <button ion-fab color="light" class="btnfab"><ion-icon name="more"></ion-icon></button>
+            <ion-fab-list  side="left">
+              <button class="list" ion-fab clear><ion-icon ios="ios-search" md="md-search" (click)="userLogOut()"></ion-icon></button>
+              <button class="list" ion-fab><ion-icon ios="ios-contact" md="md-contact"  (click)="profile()"></ion-icon></button>
+              <button class="list" ion-fab><ion-icon ios="ios-basket" md="md-basket"  (click)="Category()"></ion-icon></button>
+              <button class="list" ion-fab><ion-icon ios="ios-home" md="md-home" ></ion-icon></button>
+              
+            </ion-fab-list>
+        </ion-fab>
+   
+        <h1>Meals</h1>
+      <!-- <ion-searchbar (ionInput)="getItems($event)" class="mySearchBar"></ion-searchbar> -->
+      
+      </div>
+   
+   </ion-header>
+  
+  <ion-content class="card-background-page">
+  
+    <ion-card (click)="srcBF()">
+      <img src="../../assets/imgs/Vege/boiled-egg-avocado-tartine.jpg" alt="" class="imgs">
+      <div class="card-title">Breakfast</div>
+      <!-- <div class="card-subtitle">41 Listings</div> -->
+    </ion-card>
+  
+    <ion-card (click)="srcLunch()">
+      <img src="../../assets/imgs/Vege/Healthy-BLISSED-OUT-Thai-Salad-with-Marinated-Peanut-Tempeh-Healthy-quick-PROTEIN-PACKED-vegan-glutenfree-tempeh-salad-asian-recipe_dinner.jpg" alt=""class="imgs" >
+      <div class="card-title">Lunch</div>
+      <!-- <div class="card-subtitle">64 Listings</div> -->
+    </ion-card>
+  
+    <ion-card (click)="srcDinner()">
+      <img src="../../assets/imgs/Vege/15.Crustless-Spinach-Cheese-Pie_dinner.jpg" alt="" class="imgs">
+      <div class="card-title">Dinner</div>
+      <!-- <div class="card-subtitle">72 Listings</div> -->
+    </ion-card>
+    <ion-card (click)="srcDessert()">
+      <img src="../../assets/imgs/Vege/pancakes_breakfast.jpg" alt="" class="imgs">
+      <div class="card-title">Dessert</div>
+      <!-- <div class="card-subtitle">72 Listings</div> -->
+    </ion-card>
+  </ion-content>

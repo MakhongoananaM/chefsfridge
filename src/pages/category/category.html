@@ -1,18 +1,29 @@
-<ion-header>
-  <div class="iconHolder">
-    <img src="../../assets/imgs/signUplogo.PNG" class="iconHomePage">
- 
-    <!-- <ion-searchbar (ionInput)="getItems($event)" class="mySearchBar"></ion-searchbar>
-  --><ion-label class="mys">CATEGORY</ion-label>
-    </div>
- 
-      <div class="navigationHolder">
-          <ion-icon ios="ios-refresh" md="md-refresh" class="myNavicon"></ion-icon>
-          <ion-icon ios="ios-basket" md="md-basket" class="myNavicon"></ion-icon>
-          <ion-icon ios="ios-contact" md="md-contact" class="myNavicon" (click)="profile()"></ion-icon>
-          <ion-icon ios="ios-power" md="md-power" class="myNavicon" (click)="userLogOut()"></ion-icon>
-        </div>
- 
+<ion-header class="header">
+    <div class="iconHolder">
+  
+        <ion-fab right  class="fabb">
+            <button ion-fab color="light" class="btnfab"><ion-icon name="more"></ion-icon></button>
+            <ion-fab-list  side="left">
+              <button class="list" ion-fab><ion-icon ios="ios-search" md="md-search" (click)="userLogOut()"></ion-icon></button>
+              <button class="list" ion-fab><ion-icon ios="ios-contact" md="md-contact"  (click)="profile()"></ion-icon></button>
+              <button class="list" ion-fab><ion-icon ios="ios-basket" md="md-basket"  (click)="Category()"></ion-icon></button>
+              <button class="list" ion-fab><ion-icon ios="ios-home" md="md-home" ></ion-icon></button>
+              
+            </ion-fab-list>
+        </ion-fab>
+        <h1>Categories</h1>
+  
+      <!-- <ion-searchbar (ionInput)="getItems($event)" class="mySearchBar"></ion-searchbar> -->
+      
+      </div>
+ <!--
+       <div class="navigationHolder">
+           <ion-icon ios="ios-home" md="md-home" class="myNavicon"></ion-icon>
+           <ion-icon ios="ios-basket" md="md-basket" class="myNavicon" (click)="Category()"></ion-icon>
+           <ion-icon ios="ios-contact" md="md-contact" class="myNavicon" (click)="profile()"></ion-icon>
+           <ion-icon ios="ios-power" md="md-power" class="myNavicon" (click)="userLogOut()"></ion-icon>
+         </div> -->
+   
  </ion-header>
 
 <ion-content class="card-background-page">
@@ -25,7 +36,7 @@
 
   <ion-card (click)="Vegi()">
     <img src="../../assets/imgs/landscape-1470239458-vegeterian-dinners.jpg" alt=""class="imgs" >
-    <div class="card-title">Vegitarian</div>
+    <div class="card-title">Vegetarian</div>
     <!-- <div class="card-subtitle">64 Listings</div> -->
   </ion-card>
 
